@@ -17,8 +17,6 @@ var app = new Vue({
     this.todoList = data||[];
     this.newTodo = oldTodo;
     
-    
-
     // let oldTodo = windo.localStorage.getItem("oldTodo");
     
   },
