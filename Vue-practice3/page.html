@@ -1,0 +1,104 @@
+<html>
+  <meta charset="uft-8">
+  <head>
+  <style>
+    a {
+      text-decoration: none;
+    }
+    #app {
+      width: 1000px;
+      margin: 100px auto;
+      text-align: center;
+    }
+    ol {
+      list-style: none;
+    }
+    span{
+      display: inline-block;
+      width: 200px;
+    }
+    html,body,ol,li {
+      margin: 0;
+      padding: 0;
+    }
+    li {
+      margin: 30px 0;
+    }
+    .createdTime {
+      color:rgb(155, 138, 162);
+      font-size: 10px;
+    }
+    input[type="text"],input[type="checkbox"],input[type="password"] {
+      padding: 5px 0px;
+      width: 200px;
+    }
+    input[type="checkbox"] {
+      margin-bottom: 20px;
+    }
+    .formlabel {
+      width:50px;
+      text-align: right;
+    }
+    .formRow {
+      margin: 5px;
+    }
+    div.newTask {
+      margin-top:20px;
+    }
+  </style>
+  </head>
+  <body>
+    <div id="app">
+      <section id="signInAndSignUp" v-if="!currentUser">
+        <div>
+          <label><input type="radio" name="type" v-model="actionType" value="signUp">注册</label>
+          <label><input type="radio" name="type" v-model="actionType" value="login">登入</label>
+        </div>
+        <div class="signUp" v-if="actionType=='signUp'">
+          <form @submit.prevent=signUp>
+            <div class="formRow">
+              <span class="formlabel">用户名</span><input type="text" v-model="formData.username">
+            </div>
+            <div class="formRow">
+              <span class="formlabel">密码</span><input type="password" v-model="formData.password">
+            </div>
+            <div class="formActions">
+              <input type="submit" value="注册">
+            </div>
+          </form>
+        </div>
+        <div class="login" v-if="actionType=='login'">
+          <form @submit.prevent=login>
+            <div class="formRow">
+              <span class="formlabel">用户名</span><input type="text" v-model="formData.username">
+            </div>
+            <div class="formRow">
+              <span class="formlabel">密码</span><input type="password" v-model="formData.password">
+            </div>
+            <div class="formActions">
+              <input type="submit" value="登入">
+            </div>
+          </form>
+        </div>
+      </section>
+      <section id="todo" v-if="currentUser">
+        当前用户{{currentUser.username}}
+        <a href="" @click="logout">登出</a>
+        <div class="newTask">
+          <input type="text" v-model = "newTodo" @keypress.enter = "addTodo" placeholder="todoList">
+        </div>
+        <ol class="todos">
+          <li v-for = "todo in todoList">
+            <input type="checkbox" v-model="todo.done">
+            <span>{{todo.title}}</span>
+            <span class="createdTime">{{todo.createdAt}}</span>
+            <span v-if="todo.done">已完成</span>
+            <span v-else>未完成</span>
+            <button v-on:click="deleteTodo(todo)">X</button>
+          </li>
+        </ol>
+      </section>  
+    </div>
+    <script src="bundle.js"></script>
+  </body>
+</html>

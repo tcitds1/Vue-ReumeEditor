@@ -60,12 +60,13 @@ var app = new Vue({
             });
         },
         login: function(){
-            let user = new AV.User();
-            user.logIn(this.formData.username,this.formData.password).then((loginedUser)=>{
-                this.currentUser = this.getCurrentUser();
-            },function(error){
+            AV.User.logIn(this.formData.username, this.formData.password).then( (loginedUser)=>{
+                    this.currentUser = this.getCurrentUser();
+                    console.log("hello");
+                    console.log(AV.User.current());
+            }, function (error) {
                 alert("登陆失败");
-            });
+        });
         },
         getCurrentUser:function(){
             let current = AV.User.current();
@@ -76,9 +77,6 @@ var app = new Vue({
             else {
                 return null;
             }
-            
-            // let {id,createdAt,attributes:{username}} =  AV.User.current();
-            // return {id,username,createdAt};
         },
         logout: function(){
             AV.User.logOut();
