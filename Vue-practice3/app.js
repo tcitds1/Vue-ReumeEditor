@@ -23,14 +23,14 @@ var app = new Vue({
   created:function(){
     //获取用户的数据
     this.currentUser = this.getCurrentUser(); 
-    if(this.currentUser){
-        var query = new AV.Query("Alltodos");
-        query.find().then((todos)=>{
-            let todoAlls = todos[0];
-            this.todoList.id = todoAlls.id;
-            this.todoList = JSON.parse(todoAlls.attributes.content);
-        })
-    }
+    // if(this.currentUser){
+    //     var query = new AV.Query("Alltodos");
+    //     query.find().then((todos)=>{
+    //         let todoAlls = todos[0];
+    //         this.todoList.id = todoAlls.id;
+    //         this.todoList = JSON.parse(todoAlls.attributes.content);
+    //     })
+    // }
 
   
     window.onbeforeunload =()=>{
@@ -50,6 +50,17 @@ var app = new Vue({
     
   },
   methods: {
+        fetchTodos : function(){
+            this.currentUser = this.getCurrentUser(); 
+            if(this.currentUser){
+                var query = new AV.Query("Alltodos");
+                query.find().then((todos)=>{
+                    let todoAlls = todos[0];
+                    this.todoList.id = todoAlls.id;
+                    this.todoList = JSON.parse(todoAlls.attributes.content);
+                })
+            }
+        },
         updateTodos: function(){
             let data_string = JSON.stringify(this.todoList);
             let todo = AV.Object.createWithoutData("Alltodos",this.todoList.id);
@@ -111,9 +122,10 @@ var app = new Vue({
             });
         },
         login: function(){
-            let user = new AV.User();
-            user.logIn(this.formData.username,this.formData.password).then((loginedUser)=>{
-                this.currentUser = this.getCurrentUser();
+            // let user = new AV.User();
+            //AVuser不能用new 
+            AV.User.logIn(this.formData.username,this.formData.password).then((loginedUser)=>{
+                this.fetchTodos();               
             },function(error){
                 alert("登陆失败");
             });
@@ -127,9 +139,6 @@ var app = new Vue({
             else {
                 return null;
             }
-            
-            // let {id,createdAt,attributes:{username}} =  AV.User.current();
-            // return {id,username,createdAt};
         },
         logout: function(){
             AV.User.logOut();
