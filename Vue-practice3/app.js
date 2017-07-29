@@ -46,7 +46,7 @@ var app = new Vue({
     // this.newTodo = oldTodo;
     // this.currentUser = this.getCurrentUser();
     // let oldTodo = windo.localStorage.getItem("oldTodo");
-    
+    this.fetchTodos();
     
   },
   methods: {
