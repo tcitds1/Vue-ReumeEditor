@@ -19,7 +19,6 @@ import Topbar from './components/Topbar'
 import ResumeEditor from './components/ResumeEditor'
 import ResumePreview from './components/ResumePreview'
 import icons from './assets/icons'
-import store from './store/index'
 export default {
   name: 'app',
   data: function () {
@@ -27,7 +26,6 @@ export default {
       text: '你好'
     }
   },
-  store,
   components: {Topbar, ResumeEditor, ResumePreview},
   created () {
     document.body.insertAdjacentHTML('afterbegin', icons)
@@ -44,6 +42,7 @@ export default {
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #2c3e50;
+  margin-top: 60px;
 }
 .page {
   height: 100vh;
@@ -65,11 +64,11 @@ export default {
   }
 }
 #resumeEditor {
-  min-width: 35%; //为什么min-width代替width就没有样式bug
+  width: 35%;
   background: #444;
 }
 #resumePreview {
-  // width: 61.666667%;
+  /*width: 61.666667%;*/
   background: #777;
   flex-grow: 1;
   margin-left: 16px;
