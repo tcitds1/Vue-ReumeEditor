@@ -53,7 +53,7 @@ export default {
       this.signUpDialogVisible = false
       this.signInDialogVisible = false
       this.$store.commit('setUser', user)
-      console.log('emit success')
+      console.log('signIn成功')
     },
     signOut () {
       console.log('登出')

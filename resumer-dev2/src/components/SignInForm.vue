@@ -35,9 +35,9 @@ export default {
   methods: {
     signIn () {
       let {username, password} = this.formData
-      AV.User.logIn(username, password).then(() => {
+      AV.User.logIn(username, password).then((loginedUser) => {
         // this.$store.commit('setUser', getAVUser())
-        this.$emit('success', getAVUser)
+        this.$emit('success', getAVUser())
       }, (error) => {
         this.errorMessage = getErrorMessage(error)
       })

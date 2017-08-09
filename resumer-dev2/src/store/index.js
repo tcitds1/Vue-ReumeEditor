@@ -57,9 +57,7 @@ export default new Vuex.Store({
   mutations: {
     initState (state, payload) {
       Object.assign(state, payload)
-    },
-    increment (state) {
-      state.count++
+      console.log('initstate成功 从localstorage中获取state')
     },
     switchTab (state, payload) {
       state.selected = payload
@@ -72,7 +70,8 @@ export default new Vuex.Store({
     },
     setUser (state, payload) {
       Object.assign(state.user, payload)
-      console.log('调用成功setUser' + state.user.username)
+      console.log('setUser成功,state.user为:')
+      console.dir(state.user)
     },
     removeUser (state) {
       state.user.id = ''
