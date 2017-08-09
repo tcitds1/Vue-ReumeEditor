@@ -6,6 +6,10 @@ export default new Vuex.Store({
   state: {
     // count: 0,
     selected: 'profile',
+    user: {
+      id: '',
+      username: ''
+    },
     resume: {
       config: [
         { field: 'profile', icon: 'id' },
@@ -65,6 +69,13 @@ export default new Vuex.Store({
       // state.resume[field][key] = value
       objectPath.set(state.resume, path, value)
       localStorage.setItem('state', JSON.stringify(state))
+    },
+    setUser (state, payload) {
+      Object.assign(state.user, payload)
+      console.log('调用成功setUser' + state.user.username)
+    },
+    removeUser (state) {
+      state.user.id = ''
     }
   }
 })

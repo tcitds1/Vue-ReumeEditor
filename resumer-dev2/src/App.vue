@@ -20,6 +20,8 @@ import ResumeEditor from './components/ResumeEditor'
 import ResumePreview from './components/ResumePreview'
 import icons from './assets/icons'
 import store from './store/index'
+// import AV from './store/leancloud'
+import getAVUser from './getAVUser'
 export default {
   name: 'app',
   data: function () {
@@ -37,9 +39,9 @@ export default {
       state = JSON.parse(state)
     }
     this.$store.commit('initState', state)
+    this.$store.commit('setUser', getAVUser())
   }
 }
-
 </script>
 
 <style lang="scss">
