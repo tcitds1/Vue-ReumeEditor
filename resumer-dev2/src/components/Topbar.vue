@@ -10,8 +10,6 @@
                 <div v-else class="userActions">
                     <a href="#" class="button primary" @click.prevent="signUpDialogVisible = true">注册</a>
                     <a href="#" class="button" @click.prevent="signInDialogVisible = true">登录</a>
-                    <button class="button primary">保存</button>
-                    <button class="button">预览</button>
                 </div>
                 <MyDialog title = "登录" :visible = "signInDialogVisible" @close = "signInDialogVisible = false">
                     <SignInForm @success="signIn"></SignInForm>
@@ -54,11 +52,13 @@ export default {
       this.signInDialogVisible = false
       this.$store.commit('setUser', user)
       console.log('signIn成功')
+      this.$store.dispatch('fetchResume')
     },
     signOut () {
       console.log('登出')
       AV.User.logOut()
       this.$store.commit('removeUser')
+      this.$store.commit('initState')
     }
   }
 }
@@ -106,7 +106,6 @@ export default {
         .actions {
             display: flex;
             .userActions {
-                margin-right: 3em;
             }
             .welcome {
               margin-right: 5em;

@@ -34,12 +34,26 @@ export default {
   created () {
     document.body.insertAdjacentHTML('afterbegin', icons)
     // 在body开始标签后插入icons
-    let state = localStorage.getItem('state')
-    if (state) {
-      state = JSON.parse(state)
+    // let state = localStorage.getItem('state')
+    // if (state) {
+    //   // state = JSON.parse(state)
+    // }
+    // this.$store.commit('initState', state)
+    this.$store.commit('initState')
+    let user = getAVUser()
+    this.$store.commit('setUser', user)
+    if (user.id) {
+      this.$store.dispatch('fetchResume')
+    } else {
+      let state = localStorage.getItem('state')
+      if (state) {
+        this.$store.commit('initState', JSON.parse(state))
+      }
     }
-    this.$store.commit('initState', state)
-    this.$store.commit('setUser', getAVUser())
+    window.onbeforeunload = () => {
+      let state = JSON.stringify(this.$store.state)
+      window.localStorage.setItem('state', state)
+    }
   }
 }
 </script>

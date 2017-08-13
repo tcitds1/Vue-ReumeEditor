@@ -18,7 +18,7 @@
 </template>
 
 <script>
-// import getAVUser from '../getAVUser'
+import getAVUser from '../getAVUser'
 import AV from '../store/leancloud'
 import getErrorMessage from '../getErrorMessage'
 export default {
@@ -43,7 +43,7 @@ export default {
       user.signUp().then((loginedUser) => {
         // 利用$emit('success')调用上一级@success的方法
         console.log('注册成功 调用$emit(success)')
-        this.$emit('success', {id: loginedUser.id, username: loginedUser.attributes.username})
+        this.$emit('success', getAVUser(loginedUser))
       }, (error) => {
         this.errorMessage = getErrorMessage(error)
       })

@@ -5,7 +5,5 @@ export default function (user) {
     id: id || '',
     username: username || ''
   }
-  console.log('getAVUser成功，result为')
-  console.dir(result)
   return result
 }

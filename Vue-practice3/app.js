@@ -38,7 +38,7 @@ var app = new Vue({
         window.localStorage.setItem("data",data);
         window.localStorage.setItem("oldTodo",this.newTodo);
     }
-
+    this.fetchTodos();
     // let data_string = window.localStorage.getItem("data");
     // let oldTodo = window.localStorage.getItem("oldTodo");
     // let data = JSON.parse(data_string);
@@ -46,7 +46,7 @@ var app = new Vue({
     // this.newTodo = oldTodo;
     // this.currentUser = this.getCurrentUser();
     // let oldTodo = windo.localStorage.getItem("oldTodo");
-    this.fetchTodos();
+    
     
   },
   methods: {
