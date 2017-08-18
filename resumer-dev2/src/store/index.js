@@ -7,6 +7,7 @@ Vue.use(Vuex)
 export default new Vuex.Store({
   state: {
     // count: 0,
+    preview: false,
     selected: 'profile',
     user: {
       id: '',
@@ -30,6 +31,14 @@ export default new Vuex.Store({
     }
   },
   mutations: {
+    switchPreview (state) {
+      if (!state.preview) {
+        state.preview = true
+      } else {
+        state.preview = false
+      }
+      console.log('switchPreview成功' + state.preview)
+    },
     initState (state, payload) {
       // Object.assign(state, payload)
       state.resumeConfig.map((item) => {

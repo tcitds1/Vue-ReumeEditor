@@ -1,10 +1,11 @@
 <template>
   <div class="dialogWrapper" v-show="visible">
+      <div class="wrapper" @click="close"></div>
       <div class="dialog">
-          <header>
-              {{title}}
-              <span class="close" @click="close">X</span>
-          </header>
+          <!--<header>-->
+              <!--{{title}}-->
+              <!--<span class="close" @click="close">X</span>-->
+          <!--</header>-->
           <main>
               <slot></slot>
           </main>
@@ -24,9 +25,16 @@ export default {
 }
 </script>
 <style lang="scss" scoped>
+  .wrapper {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+  }
   .dialogWrapper {
     position: fixed;
-    background: hsla(0,0%,0%,.25);
+    background: hsla(0,0%,40%,0.5);
     top: 0;
     left: 0;
     bottom: 0;

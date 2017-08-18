@@ -10,10 +10,11 @@
                 <div v-else class="userActions">
                     <a href="#" class="button primary" @click.prevent="signUpDialogVisible = true">注册</a>
                     <a href="#" class="button" @click.prevent="signInDialogVisible = true">登录</a>
+                    <a href="#" class="button" @click.prevent="switchPreview">预览</a>
                 </div>
                 <MyDialog title = "登录" :visible = "signInDialogVisible" @close = "signInDialogVisible = false">
                     <SignInForm @success="signIn"></SignInForm>
-                </MyDialog>  
+                </MyDialog>
                 <MyDialog title = "注册" :visible = "signUpDialogVisible" @close = "signUpDialogVisible = false">
                     <SignUpForm @success="signIn"/>
                 </MyDialog>
@@ -59,6 +60,9 @@ export default {
       AV.User.logOut()
       this.$store.commit('removeUser')
       this.$store.commit('initState')
+    },
+    switchPreview () {
+      this.$store.commit('switchPreview')
     }
   }
 }
@@ -113,7 +117,7 @@ export default {
         }
         /*.actions > a {
             display: flex;
-            
+
         }*/
     }
 

@@ -1,20 +1,22 @@
 <template>
   <div id="app">
     <!--<p>{{text}}</p>-->
-    <div class="page">
+    <Preview v-show="preview"/>
+    <div class="page" v-show="!preview">
       <header>
         <Topbar/>
       </header>
       <main>
         <ResumeEditor/>
         <ResumePreview/>
-      </main>  
+      </main>
     </div>
   </div>
 </template>
 <script>
 import './assets/reset.css'
 import 'normalize.css/normalize.css'
+import Preview from './components/Preview'
 import Topbar from './components/Topbar'
 import ResumeEditor from './components/ResumeEditor'
 import ResumePreview from './components/ResumePreview'
@@ -29,8 +31,13 @@ export default {
       text: '你好'
     }
   },
+  computed: {
+    preview () {
+      return this.$store.state.preview
+    }
+  },
   store,
-  components: {Topbar, ResumeEditor, ResumePreview},
+  components: {Topbar, ResumeEditor, ResumePreview, Preview},
   created () {
     document.body.insertAdjacentHTML('afterbegin', icons)
     // 在body开始标签后插入icons
