@@ -88,7 +88,7 @@ export default new Vuex.Store({
       state.resume[field].splice(index, 1)
       // console.dir(state.resume[field])
     },
-    setResumerId (state, {id}) {
+    setResumeId (state, {id}) {
       state.resume.id = id
     },
     setResume (state, resume) {

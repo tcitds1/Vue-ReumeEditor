@@ -174,8 +174,6 @@ export default {
     height: 5px;
   }
 
-
-
   .input_form_sign:focus {
     border-bottom: 1px solid #FF8383 ;}
 

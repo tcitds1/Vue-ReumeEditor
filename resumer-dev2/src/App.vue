@@ -97,7 +97,6 @@ export default {
   background: #444;
 }
 #resumePreview {
-  // width: 61.666667%;
   background: #777;
   flex-grow: 1;
   margin-left: 16px;
