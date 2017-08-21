@@ -87,6 +87,7 @@ export default {
             color: #000000;
         }
         .button {
+            border-radius:3px;
             width: 72px;
             height: 32px;
             border: none;
@@ -110,6 +111,7 @@ export default {
         .actions {
             display: flex;
             .userActions {
+              margin-right: 5px;
             }
             .welcome {
               vertical-align: middle;
