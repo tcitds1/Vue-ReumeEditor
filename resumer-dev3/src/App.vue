@@ -1,5 +1,6 @@
 <template>
   <div id="app">
+    <!--<p>{{text}}</p>-->
     <Preview v-show="preview"/>
     <div class="page" v-show="!preview">
       <header>
@@ -21,6 +22,7 @@ import ResumeEditor from './components/ResumeEditor'
 import ResumePreview from './components/ResumePreview'
 import icons from './assets/icons'
 import store from './store/index'
+// import AV from './store/leancloud'
 import getAVUser from './getAVUser'
 export default {
   name: 'app',
@@ -79,13 +81,12 @@ export default {
   >main {
     flex-grow: 1;
     min-width: 1024px;
-    max-width: 1440px;
     margin-top:16px;
     margin-bottom: 16px;
     display: flex;
     /*justify-content: space-around;*/
     justify-content: space-between;
-    padding: 0 16px;
+    /*padding: 0 16px;*/
     align-self: center;
     width:100%;
   }
