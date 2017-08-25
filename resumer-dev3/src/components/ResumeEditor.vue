@@ -3,7 +3,12 @@
         <!--i am resumeEditor-->
         <nav>
             <ol>
-                <li></li>
+                <li title="主页">
+                  <!--<svg class="icon" >-->
+                    <!--<use :xlink:href="`#icon-black`"></use>-->
+                  <!--</svg>-->
+                  Resume
+                </li>
                 <li v-for="(item,index) in resumeConfig"
                      :class="{active: item.field === selected}"
                      @click="selected = item.field;">
@@ -89,14 +94,14 @@ export default {
   }
 }
 </script>
-<style lang="scss" scoped>
+<style lang="scss">
   #resumeEditor{
     background:#e7e8ea;
     display: flex;
     flex-direction: row;
     overflow: auto;
     > nav{
-      width: 70px;
+      width: 80px;
       background: black;
       color: white;
       top:0;
@@ -108,7 +113,8 @@ export default {
           display: flex;
           justify-content: center;
           align-items: center;
-          margin-bottom: 16px;
+          margin-top:15px;
+          margin-bottom: 20px;
           &.active{
             background: white;
             color: black;
@@ -118,13 +124,13 @@ export default {
     }
     > .panels{
       background: #ffffff;
-      max-width: 450px;
-      margin-left:140px;
-      margin-right:60px;
+      width:450px;
+      margin-left:120px;
+      margin-right: 30px;
       margin-top: 15px;
-      margin-bottom:15px;
+      margin-bottom:20px;
       box-shadow:0 1px 1px 0 rgba(0,0,0,0.25);
-      flex-grow: 1;
+
       > li {
         padding: 24px;
         h2{
@@ -134,37 +140,38 @@ export default {
       overflow: auto
     }
     svg.icon{
-      width: 24px; // 原设计稿 32px 不好看，改成 24px
-      height: 24px;
+      width: 28px; // 原设计稿 32px 不好看，改成 24px
+      height: 28px;
+    }
+    ol{
+      list-style: none;
+    }
+    .resumeField{
+      > label{
+        display: block;
+      }
+      input[type=text]{
+        margin: 16px 0;
+        border: 1px solid #ddd;
+        box-shadow:inset 0 1px 3px 0 rgba(0,0,0,0.25);
+        width: 100%;
+        height: 40px;
+        padding: 0 8px;
+      }
+    }
+    hr{
+      border: none;
+      border-top: 1px solid #ddd;
+      margin: 24px 0;
+    }
+    .subitem{
+      position: relative;
+      .button.remove{
+        position: absolute;
+        right: 0;
+        top: -3px;
+      }
     }
   }
-  ol{
-    list-style: none;
-  }
-  .resumeField{
-    > label{
-      display: block;
-    }
-    input[type=text]{
-      margin: 16px 0;
-      border: 1px solid #ddd;
-      box-shadow:inset 0 1px 3px 0 rgba(0,0,0,0.25);
-      width: 100%;
-      height: 40px;
-      padding: 0 8px;
-    }
-  }
-  hr{
-    border: none;
-    border-top: 1px solid #ddd;
-    margin: 24px 0;
-  }
-  .subitem{
-    position: relative;
-    .button.remove{
-      position: absolute;
-      right: 0;
-      top: -3px;
-    }
-  }
+
   </style>

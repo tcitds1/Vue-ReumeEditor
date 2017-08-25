@@ -31,14 +31,6 @@ export default new Vuex.Store({
     }
   },
   mutations: {
-    switchPreview (state) {
-      if (!state.preview) {
-        state.preview = true
-      } else {
-        state.preview = false
-      }
-      console.log('switchPreview成功' + state.preview)
-    },
     initState (state, payload) {
       // Object.assign(state, payload)
       state.resumeConfig.map((item) => {
@@ -56,6 +48,14 @@ export default new Vuex.Store({
         Object.assign(state, payload)
       }
       console.log('initstate成功 从localstorage中获取state')
+    },
+    switchPreview (state) {
+      if (!state.preview) {
+        state.preview = true
+      } else {
+        state.preview = false
+      }
+      console.log('switchPreview成功' + state.preview)
     },
     switchTab (state, payload) {
       state.selected = payload

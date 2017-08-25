@@ -2,6 +2,7 @@
     <div id="Topbar">
         <div class="wrapper">
             <span class="logo"></span>
+
             <div class="actions">
                 <div v-if="logined" class="userActions">
                     <span class="welcome">你好,{{user.username}}</span>
@@ -76,7 +77,7 @@ export default {
             min-width: 1024px;
             max-width: 1440px;
             margin: 0 auto ;
-            height: 64px;
+            height: 70px;
             display: flex;
             justify-content: space-between;
             align-items: center;

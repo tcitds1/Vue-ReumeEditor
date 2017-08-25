@@ -79,29 +79,32 @@ export default {
       box-shadow:0 1px 3px 0 rgba(0,0,0,0.25);
     }*/
     #resumePreview{
-      overflow: auto; 
-      background:white; 
-      box-shadow:0 1px 3px 0 rgba(0,0,0,0.25); 
+      margin-top: 15px;
+      max-width: 1300px;
+      margin-right: 30px;
+      overflow: auto;
+      background:white;
+      box-shadow:0 1px 3px 0 rgba(0,0,0,0.25);
       padding: 2em;
       text-align: left;
-      color: #333; 
+      color: #333;
       line-height: 1.2;
       * {
-        box-sizing: border-box; 
-        font-variant: normal; 
+        box-sizing: border-box;
+        font-variant: normal;
         font-weight: normal;
       }
-      ol{ 
-        list-style: none; 
+      ol{
+        list-style: none;
       }
-      section + section{ 
-        margin-top: 2em; 
+      section + section{
+        margin-top: 2em;
       }
-      p{ 
-        white-space: pre-line; 
+      p{
+        white-space: pre-line;
       } // 请问为什么要加这一行
       section {
-        > h2:first-child{ background: #ddd; display: inline-block; padding: .2em; 
+        > h2:first-child{ background: #ddd; display: inline-block; padding: .2em;
           margin-bottom: .5em;
         }
       }

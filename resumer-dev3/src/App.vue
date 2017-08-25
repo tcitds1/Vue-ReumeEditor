@@ -7,7 +7,7 @@
         <Topbar/>
       </header>
       <main>
-        <ResumeEditor/>
+        <!--<ResumeEditor/>-->
         <ResumePreview/>
       </main>
     </div>
@@ -22,8 +22,7 @@ import ResumeEditor from './components/ResumeEditor'
 import ResumePreview from './components/ResumePreview'
 import icons from './assets/icons'
 import store from './store/index'
-// import AV from './store/leancloud'
-import getAVUser from './getAVUser'
+// import getAVUser from './getAVUser'
 export default {
   name: 'app',
   data: function () {
@@ -40,27 +39,22 @@ export default {
   components: {Topbar, ResumeEditor, ResumePreview, Preview},
   created () {
     document.body.insertAdjacentHTML('afterbegin', icons)
-    // 在body开始标签后插入icons
-    // let state = localStorage.getItem('state')
-    // if (state) {
-    //   // state = JSON.parse(state)
-    // }
-    // this.$store.commit('initState', state)
-    this.$store.commit('initState')
-    let user = getAVUser()
-    this.$store.commit('setUser', user)
-    if (user.id) {
-      this.$store.dispatch('fetchResume')
-    } else {
-      let state = localStorage.getItem('state')
-      if (state) {
-        this.$store.commit('initState', JSON.parse(state))
-      }
-    }
-    window.onbeforeunload = () => {
-      let state = JSON.stringify(this.$store.state)
-      window.localStorage.setItem('state', state)
-    }
+
+//    this.$store.commit('initState')
+//    let user = getAVUser()
+//    this.$store.commit('setUser', user)
+//    if (user.id) {
+//      this.$store.dispatch('fetchResume')
+//    } else {
+//      let state = localStorage.getItem('state')
+//      if (state) {
+//        this.$store.commit('initState', JSON.parse(state))
+//      }
+//    }
+//    window.onbeforeunload = () => {
+//      let state = JSON.stringify(this.$store.state)
+//      window.localStorage.setItem('state', state)
+//    }
   }
 }
 </script>
@@ -82,7 +76,6 @@ export default {
     flex-grow: 1;
     min-width: 1024px;
     margin-top:16px;
-    margin-bottom: 16px;
     display: flex;
     /*justify-content: space-around;*/
     justify-content: space-between;
@@ -92,13 +85,12 @@ export default {
   }
 }
 #resumeEditor {
-  min-width: 35%; //为什么min-width代替width就没有样式bug
+  min-width: 30%; //为什么min-width代替width就没有样式bug
   background: #444;
 }
 #resumePreview {
   background: #777;
   flex-grow: 1;
-  margin-left: 16px;
 }
 svg.icon {
   height: 1em;
