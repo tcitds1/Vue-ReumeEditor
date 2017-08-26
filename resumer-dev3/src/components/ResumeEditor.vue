@@ -27,14 +27,25 @@
                         <div class="resumeField"v-for="(value,key) in subitem">
                           <div v-if="Array.isArray(value)">
                             <div v-for="(value_inline,index) in value">
-                              <input type="text" :value="value_inline"  @input="changeResumeField(`${item.field}.${i}.${key}.${index}`, $event.target.value,[item.field,i,key,index])">
-                              <!--<hr>-->
+
+                              <div class="group">
+                                <input type="text" :value="value_inline"  @input="changeResumeField(`${item.field}.${i}.${key}.${index}`, $event.target.value,[item.field,i,key,index])">
+                                <span class="highlight"></span>
+                                <span class="bar"></span>
+                                <label>{{index+1}}</label>
+                              </div>
                             </div>
                           </div>
                           <div v-else>
-                            <label>{{key}}</label>
-                            <input type="text" :value="value" :placeholder="key"  @input="changeResumeField(`${item.field}.${i}.${key}`, $event.target.value)">
-                            <!--<hr>-->
+                            <!--<label>{{key}}</label>-->
+                            <!--<input type="text" :value="value" :placeholder="key"  @input="changeResumeField(`${item.field}.${i}.${key}`, $event.target.value)">-->
+                            <!--&lt;!&ndash;<hr>&ndash;&gt;-->
+                            <div class="group">
+                              <input type="text" :value="value"  @input="changeResumeField(`${item.field}.${key}`, $event.target.value)">
+                              <span class="highlight"></span>
+                              <span class="bar"></span>
+                              <label>{{key}}</label>
+                            </div>
                           </div>
                         </div>
 
@@ -42,8 +53,13 @@
                 </div>
 
                 <div v-else class="resumeField" v-for="(value,key) in resume[item.field]">
-                    <label> {{key}} </label>
-                    <input type="text" :value="value" :placeholder="key" @input="changeResumeField(`${item.field}.${key}`, $event.target.value)">
+                    <div class="group">
+                      <input type="text" :value="value"  @input="changeResumeField(`${item.field}.${key}`, $event.target.value)">
+                      <span class="highlight"></span>
+                      <span class="bar"></span>
+                      <label>{{key}}</label>
+                    </div>
+                    <!--<label> {{key}} </label>-->
                 </div>
                 <!--<button @click = "addResumeSubfield(item)">新建</button>-->
             </li>
@@ -129,13 +145,13 @@ export default {
       }
     }
     > .panels{
-      background: #e7e8ea;
+      background: #fff;
       width:450px;
       margin-left:120px;
       margin-right: 30px;
       margin-top: 15px;
       /*border:1px solid black;*/
-      /*box-shadow:0 1px 1px 0 rgba(0,0,0,0.25);*/
+      box-shadow:0 1px 1px 0 rgba(0,0,0,0.25);
       /*border:1px solid black;*/
       > li {
         /*padding: 24px;*/
@@ -160,16 +176,112 @@ export default {
       > label{
         display: block;
       }
-      input[type=text]{
-        margin-bottom: 16px;
-        /*border: 1px solid #ddd;*/
-        /*box-shadow:inset 0 1px 3px 0 rgba(0,0,0,0.25);*/
-        width: 100%;
-        height: 60px;
-        padding: 10px 8px;
-        padding-left: 20px;
-        border:none;
+      /*input[type=text]{*/
+        /*margin-bottom: 16px;*/
+        /*!*border: 1px solid #ddd;*!*/
+        /*!*box-shadow:inset 0 1px 3px 0 rgba(0,0,0,0.25);*!*/
+        /*width: 100%;*/
+        /*height: 60px;*/
+        /*padding: 10px 8px;*/
+        /*padding-left: 20px;*/
+        /*border:none;*/
 
+      /*}*/
+      .group 			  {
+        margin-top:45px;
+        position:relative;
+        margin-bottom:45px;
+        margin-left:auto;
+        margin-right:auto;
+        width:400px;
+      }
+      /* 父组件相对定位 */
+      input 				{
+        font-size:16px;
+        padding:10px 10px 10px 5px;
+        display:block;
+        width:400px;
+        border:none;
+        border-bottom:1px solid #757575;
+      }
+      input:focus 		{ outline:none; }
+
+      /* LABEL ======================================= */
+      label 				 {
+        color:#999;
+        font-size:16px;
+        font-weight:normal;
+        position:absolute;
+        pointer-events:none;
+        left:5px;
+        top:10px;
+        transition:0.2s ease all;
+        -moz-transition:0.2s ease all;
+        -webkit-transition:0.2s ease all;
+      }
+
+      /* active state */
+      input:focus ~ label, input:valid ~ label 		{
+        top:-20px;
+        font-size:14px;
+        color:#5264AE;
+      }
+
+      /* BOTTOM BARS ================================= */
+      .bar 	{ position:relative; display:block; width:400px; }
+      .bar:before, .bar:after 	{
+        content:'';
+        height:2px;
+        width:0;
+        bottom:1px;
+        position:absolute;
+        background:#5264AE;
+        transition:0.2s ease all;
+        -moz-transition:0.2s ease all;
+        -webkit-transition:0.2s ease all;
+      }
+      .bar:before {
+        left:50%;
+      }
+      .bar:after {
+        right:50%;
+      }
+
+      /* active state */
+      input:focus ~ .bar:before, input:focus ~ .bar:after {
+        width:50%;
+      }
+
+      /* HIGHLIGHTER ================================== */
+      .highlight {
+        position:absolute;
+        height:60%;
+        width:100px;
+        top:25%;
+        left:0;
+        pointer-events:none;
+        opacity:0.5;
+      }
+
+      /* active state */
+      input:focus ~ .highlight {
+        -webkit-animation:inputHighlighter 0.3s ease;
+        -moz-animation:inputHighlighter 0.3s ease;
+        animation:inputHighlighter 0.3s ease;
+      }
+
+      /* ANIMATIONS ================ */
+      @-webkit-keyframes inputHighlighter {
+        from { background:#5264AE; }
+        to 	{ width:0; background:transparent; }
+      }
+      @-moz-keyframes inputHighlighter {
+        from { background:#5264AE; }
+        to 	{ width:0; background:transparent; }
+      }
+      @keyframes inputHighlighter {
+        from { background:#5264AE; }
+        to 	{ width:0; background:transparent; }
       }
     }
     hr{
