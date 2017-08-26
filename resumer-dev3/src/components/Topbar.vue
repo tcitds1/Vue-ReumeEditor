@@ -77,7 +77,7 @@ export default {
             min-width: 1024px;
             max-width: 1440px;
             margin: 0 auto ;
-            height: 70px;
+            height: 60px;
             display: flex;
             justify-content: space-between;
             align-items: center;

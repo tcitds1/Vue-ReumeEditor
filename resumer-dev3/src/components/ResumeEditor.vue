@@ -23,25 +23,30 @@
             <li v-for="item in resumeConfig" v-show="item.field === selected">
                 <div v-if = "item.type === 'array'">
                     <div v-for="(subitem, i) in resume[item.field]">
-                        <button class="button remove small" @click="removeResumeSubfield(item.field, i)">删除</button>
+
                         <div class="resumeField"v-for="(value,key) in subitem">
+                          <div v-if="Array.isArray(value)">
+                            <div v-for="(value_inline,index) in value">
+                              <input type="text" :value="value_inline"  @input="changeResumeField(`${item.field}.${i}.${key}.${index}`, $event.target.value,[item.field,i,key,index])">
+                              <hr>
+                            </div>
+                          </div>
+                          <div v-else>
                             <label>{{key}}</label>
                             <input type="text" :value="value"  @input="changeResumeField(`${item.field}.${i}.${key}`, $event.target.value)">
                             <hr>
+                          </div>
                         </div>
+
                     </div>
-                    <button class="button" @click="addResumeSubfield(item)">新增</button>
                 </div>
+
                 <div v-else class="resumeField" v-for="(value,key) in resume[item.field]">
                     <label> {{key}} </label>
                     <input type="text" :value="value" @input="changeResumeField(`${item.field}.${key}`, $event.target.value)">
                 </div>
                 <!--<button @click = "addResumeSubfield(item)">新建</button>-->
             </li>
-            <!--<li>
-                {{count}}
-                <button @click="add">test</button>
-            </li>-->
         </ol>
     </div>
 </template>
@@ -50,8 +55,9 @@ import getAVUser from '../getAVUser'
 export default {
   name: 'ResumeEditor',
   methods: {
-    changeResumeField (path, value) {
-      this.$store.commit('updateResume', {path, value})
+    changeResumeField (path, value, arr) {
+      this.$store.commit('updateResume', {path, value, arr:arr})
+//      console.dir(arr) 我真是个天才
     },
     test (value) {
       console.log(value)

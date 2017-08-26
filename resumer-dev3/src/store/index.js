@@ -14,20 +14,136 @@ export default new Vuex.Store({
       username: ''
     },
     resumeConfig: [
-        {field: 'profile', icon: 'id', keys: ['name', 'city', 'title', 'birthday']},
+        {field: 'profile', icon: 'id', type:"object", keys: ['name', 'city', 'title', 'birthday']},
+        { field: 'contacts', icon: 'phone', type: 'object', keys: ['contact', 'content'] },
         { field: 'workHistory', icon: 'work', type: 'array', keys: ['company', 'content'] },
         { field: 'education', icon: 'book', type: 'array', keys: ['school', 'content'] },
         { field: 'projects', icon: 'heart', type: 'array', keys: ['name', 'content'] },
         { field: 'awards', icon: 'cup', type: 'array', keys: ['name', 'content'] },
-        { field: 'contacts', icon: 'phone', type: 'array', keys: ['contact', 'content'] }
     ],
     resume: {
-      // profile: { },
-      // workHistory: [ ],
-      // education: [ ],
-      // projects: [ ],
-      // awards: [ ],
-      // contacts: [ ]
+      "profile": {
+        "name": "易文祥",
+        "profession": "SoftwareEngineer",
+        "summary": "我就是喜欢前端啊"
+        // "Internet": [
+        //   {
+        //     "network": "Twitter",
+        //     "username": "neutralthoughts",
+        //     "url": ""
+        //   },
+        //   {
+        //     "network": "SoundCloud",
+        //     "username": "dandymusicnl",
+        //     "url": "https://soundcloud.com/dandymusicnl"
+        //   }
+        // ]
+      },
+      "location": {
+        "address": "2712 Broadway St",
+        "postalCode": "CA 94115",
+        "city": "San Francisco",
+        "countryCode": "US",
+        "region": "California"
+      },
+      "contacts": {
+        "email": "richard.hendriks@gmail.com",
+        "phone": "(912) 555-4321",
+        "website": "http://richardhendricks.com",
+      },
+      "workHistory": [
+        {
+          "company": "东云研究所",
+          "position": "CEO/President",
+          "website": "http://piedpiper.com",
+          "startDate": "2013-12-01",
+          "endDate": "2014-12-01",
+          "summary" : "今天又是和平的一天",
+          "highlights": [
+            "制作机器人",
+            "Successfully won Techcrunch Disrupt",
+            "Optimized an algorithm that holds the current world record for Weisman Scores"
+          ]
+        }
+      ],
+      "education": [
+        {
+          "school": "University of Oklahoma",
+          "area": "Information Technology",
+          "studyType": "Bachelor",
+          "startDate": "2011-06-01",
+          "endDate": "2014-01-01",
+          "gpa": "4.0",
+          "courses": [
+            "DB1101 - Basic SQL",
+            "CS2011 - Java Introduction"
+          ]
+        }
+      ],
+
+      "awards": [
+        {
+          "title": "Digital Compression Pioneer Award",
+          "date": "2014-11-01",
+          "awarder": "Techcrunch",
+          "summary": "There is no spoon."
+        }
+      ],
+
+      "projects": [
+        {
+          "name": "Video compression for 3d media",
+          "publisher": "Hooli",
+          "releaseDate": "2014-10-01",
+          "website": "http://en.wikipedia.org/wiki/Silicon_Valley_(TV_series)",
+          "summary": "Innovative middle-out compression algorithm that changes the way we store data."
+        }
+      ],
+
+      "skills": [
+        {
+          "name": "Web Development",
+          "level": "Master",
+          "keywords": [
+            "HTML",
+            "CSS",
+            "Javascript"
+          ]
+        },
+        {
+          "name": "Compression",
+          "level": "Master",
+          "keywords": [
+            "Mpeg",
+            "MP4",
+            "GIF"
+          ]
+        }
+      ],
+
+      "languages": [
+        {
+          "language": "English",
+          "fluency": "Native speaker"
+        }
+      ],
+
+      "interests": [
+        {
+          "name": "Wildlife",
+          "keywords": [
+            "Ferrets",
+            "Unicorns"
+          ]
+        }
+      ],
+
+      "references": [
+        {
+          "name": "Erlich Bachman",
+          "reference": "It is my pleasure to recommend Richard, his performance working as a consultant for Main St. Company proved that he will be a valuable addition to any company."
+        }
+      ]
     }
   },
   mutations: {
@@ -61,9 +177,15 @@ export default new Vuex.Store({
       state.selected = payload
       localStorage.setItem('state', JSON.stringify(state))
     },
-    updateResume (state, {path, value}) {
+    updateResume (state, {path, value, arr}) {
       // state.resume[field][key] = value
-      objectPath.set(state.resume, path, value)
+      if(arr){
+        Vue.set(state.resume[arr[0]][arr[1]][arr[2]],arr[3],value)
+      }
+      else {
+        objectPath.set(state.resume, path, value)
+      }
+
       // localStorage.setItem('state', JSON.stringify(state))
     },
     setUser (state, payload) {

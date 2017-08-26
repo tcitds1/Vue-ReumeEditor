@@ -7,7 +7,7 @@
         <Topbar/>
       </header>
       <main>
-        <!--<ResumeEditor/>-->
+        <ResumeEditor/>
         <ResumePreview/>
       </main>
     </div>
@@ -22,7 +22,7 @@ import ResumeEditor from './components/ResumeEditor'
 import ResumePreview from './components/ResumePreview'
 import icons from './assets/icons'
 import store from './store/index'
-// import getAVUser from './getAVUser'
+import getAVUser from './getAVUser'
 export default {
   name: 'app',
   data: function () {
@@ -60,11 +60,13 @@ export default {
 </script>
 
 <style lang="scss">
+html {
+  background: #eaebec;
+}
 #app {
   font-family: 'Avenir', Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  text-align: center;
   color: #2c3e50;
 }
 .page {
