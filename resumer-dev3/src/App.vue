@@ -92,6 +92,7 @@ html {
 }
 #resumePreview {
   background: #777;
+
   flex-grow: 1;
 }
 svg.icon {

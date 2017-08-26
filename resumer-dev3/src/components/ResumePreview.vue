@@ -1,123 +1,172 @@
 <template>
-  <div id="content" class="container">
+  <div id="resumePreview">
     <header>
       <h1>{{resume.profile.name}}</h1>
       <h2>{{resume.profile.profession}}</h2></header>
+    <div id="content" class="container">
 
-    <section id="basics">
-      <div class="contact">
-        <h3>Contact</h3>
-        <div class="website">
-          <strong>Website</strong>{{resume.contacts.website}}</div>
-        <div class="email">
-          <strong>Email</strong>
-          <!--<a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="24564d474c4556400a4c414a40564d4f57644349454d480a474b49">[email&nbsp;protected]</a>-->
-          {{resume.contacts.email}}
+
+      <section id="basics">
+        <div class="contact">
+          <h3>Contact</h3>
+          <div class="website">
+            <strong>Website</strong>{{resume.contacts.website}}</div>
+          <div class="email">
+            <strong>Email</strong>
+            <!--<a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="24564d474c4556400a4c414a40564d4f57644349454d480a474b49">[email&nbsp;protected]</a>-->
+            {{resume.contacts.email}}
+          </div>
+          <div class="phone">
+            <strong>Phone</strong>{{resume.contacts.phone}}</div>
         </div>
-        <div class="phone">
-          <strong>Phone</strong>{{resume.contacts.phone}}</div>
-      </div>
-      <div class="summary">
-        <h3>About</h3>
-        <p>{{resume.profile.summary}}</p>
-      </div>
-      <!--<section id="profiles">-->
+        <div class="summary">
+          <h3>About</h3>
+          <p>{{resume.profile.summary}}</p>
+        </div>
+        <!--<section id="profiles">-->
         <!--<div class="item">-->
-          <!--<strong class="network">Twitter</strong></div>-->
+        <!--<strong class="network">Twitter</strong></div>-->
         <!--<div class="item">-->
-          <!--<strong class="network">SoundCloud</strong>-->
-          <!--<div class="url">-->
-            <!--<a href="https://soundcloud.com/dandymusicnl">dandymusicnl</a></div>-->
+        <!--<strong class="network">SoundCloud</strong>-->
+        <!--<div class="url">-->
+        <!--<a href="https://soundcloud.com/dandymusicnl">dandymusicnl</a></div>-->
+        <!--</div>-->
+        <!--</section>-->
+      </section>
+
+      <section id="work">
+        <h2>Work</h2>
+        <section v-for="item in resume.workHistory">
+          <div class="item">
+            <h3 class="work_name">{{item.company}}</h3>
+            <div class="work_position">{{item.position}}</div>
+            <div class="work_date">
+              <span class="startDate">{{item.startDate}}</span>
+              <span class="endDate">- {{item.endDate}}</span></div>
+            <div class="work_website">
+              <a :href="item.website">{{item.website}}</a></div>
+            <div class="summary">
+              <p>{{item.summary}}</p>
+            </div>
+            <ul class="highlights">
+              <li v-for="(value,index) in item.highlights">{{value}}</li>
+            </ul>
+          </div>
+        </section>
+      </section>
+
+      <section id="education">
+        <h2>Education</h2>
+        <section v-for="item in resume.education">
+          <div class="item">
+
+
+            <div class="institution">{{item.school}}-{{item.area}}</div>
+            <div class="study_date">
+              <span class="startDate">{{item.startDate}}</span>
+              <span class="endDate">- {{item.endDate}}</span></div>
+            <div class="study_type">{{item.studyType}}</div>
+            <ul class="courses">
+              <li v-for="value in item.courses">{{value}}</li>
+            </ul>
+          </div>
+        </section>
+      </section>
+      <section id="projects">
+        <h2>Projects</h2>
+        <section v-for="item in resume.projects">
+          <div class="item">
+            <h3 class="company">
+              {{item.name}}
+            </h3>
+            <div class="work_position">
+              {{item.platform}}
+            </div>
+            <div class="work_date">
+            <span class="startDate">
+              {{item.startDate}}
+          	</span>
+              <span class="endDate">
+              {{item.endDate}}
+              </span>
+            </div>
+            <div class="work_website">
+              <a :href="item.website">{{item.website}}</a>
+            </div>
+            <div class="summary">
+              <p>{{item.summary}}</p>
+            </div>
+            <!--<ul class="highlights">-->
+            <!--<li>Awarded 'Teacher of the Month'</li>-->
+            <!--</ul>-->
+          </div>
+        </section>
+      </section>
+
+      <section id="awards">
+        <h2>Awards</h2>
+        <section v-for="item in resume.awards">
+          <div class="item">
+            <div class="institution">{{item.title}}</div>
+            <div class="study_date">
+              <span class="startDate">{{item.date}}</span>
+            </div>
+            <div class="award_address">{{item.address}}</div>
+            <div class="summary">{{item.summary}}</div>
+          </div>
+        </section>
+      </section>
+
+      <section id="skills">
+
+        <h2>Skills</h2>
+        <div class="item" v-for="item in resume.skills">
+          <div class="name">{{item.name}}</div>
+          <div class="level">
+            <em>{{item.level}}</em></div>
+          <ul class="keywords">
+            <li v-for="(value,index) in item.keywords">{{value}}</li>
+            <!--<li>CSS</li>-->
+            <!--<li>Javascript</li>-->
+          </ul>
+        </div>
+        <!--<div class="item">-->
+        <!--<div class="name">Compression</div>-->
+        <!--<div class="level">-->
+        <!--<em>Master</em></div>-->
+        <!--<ul class="keywords">-->
+        <!--<li>Mpeg</li>-->
+        <!--<li>MP4</li>-->
+        <!--<li>GIF</li>-->
+        <!--</ul>-->
+        <!--</div>-->
+      </section>
+      <!--<section id="languages">-->
+        <!--<h2>Languages</h2>-->
+        <!--<div class="item">-->
+          <!--<div class="language">English</div>-->
+          <!--<div class="level">-->
+            <!--<em>Native speaker</em></div>-->
         <!--</div>-->
       <!--</section>-->
-    </section>
-
-    <section id="work">
-      <h2>Work</h2>
-      <section v-for="item in resume.workHistory">
+      <!--<section id="interests">-->
+        <!--<h2>Interests</h2>-->
+        <!--<div class="item">-->
+          <!--<div class="name">Wildlife</div>-->
+          <!--<ul class="keywords">-->
+            <!--<li>Ferrets</li>-->
+            <!--<li>Unicorns</li>-->
+          <!--</ul>-->
+        <!--</div>-->
+      <!--</section>-->
+      <section id="references">
+        <h2>References</h2>
         <div class="item">
-          <h3 class="work_name">{{item.company}}</h3>
-          <div class="work_position">{{item.position}}</div>
-          <div class="work_date">
-            <span class="startDate">{{item.startDate}}</span>
-            <span class="endDate">- {{item.endDate}}</span></div>
-          <div class="work_website">
-            <a :href="item.website">{{item.website}}</a></div>
-          <div class="summary">
-            <p>{{item.summary}}</p>
-          </div>
-          <ul class="highlights">
-            <li v-for="(value,index) in item.highlights">{{value}}</li>
-          </ul>
+          <blockquote class="reference">It is my pleasure to recommend Richard, his performance working as a consultant for Main St. Company proved that he will be a valuable addition to any company.</blockquote>
+          <div class="name">— Erlich Bachman</div>
         </div>
       </section>
-    </section>
-
-    <section id="education">
-      <h2>Education</h2>
-      <section v-for="item in resume.education">
-        <div class="item">
-
-
-          <div class="institution">{{item.school}}-{{item.area}}</div>
-          <div class="study_date">
-            <span class="startDate">{{item.startDate}}</span>
-            <span class="endDate">- {{item.endDate}}</span></div>
-          <div class="study_type">{{item.studyType}}</div>
-          <ul class="courses">
-            <li v-for="value in item.courses">{{value}}</li>
-          </ul>
-        </div>
-      </section>
-    </section>
-    <section id="skills">
-      <h2>Skills</h2>
-      <div class="item">
-        <div class="name">Web Development</div>
-        <div class="level">
-          <em>Master</em></div>
-        <ul class="keywords">
-          <li>HTML</li>
-          <li>CSS</li>
-          <li>Javascript</li>
-        </ul>
-      </div>
-      <div class="item">
-        <div class="name">Compression</div>
-        <div class="level">
-          <em>Master</em></div>
-        <ul class="keywords">
-          <li>Mpeg</li>
-          <li>MP4</li>
-          <li>GIF</li>
-        </ul>
-      </div>
-    </section>
-    <section id="languages">
-      <h2>Languages</h2>
-      <div class="item">
-        <div class="language">English</div>
-        <div class="level">
-          <em>Native speaker</em></div>
-      </div>
-    </section>
-    <section id="interests">
-      <h2>Interests</h2>
-      <div class="item">
-        <div class="name">Wildlife</div>
-        <ul class="keywords">
-          <li>Ferrets</li>
-          <li>Unicorns</li>
-        </ul>
-      </div>
-    </section>
-    <section id="references">
-      <h2>References</h2>
-      <div class="item">
-        <blockquote class="reference">It is my pleasure to recommend Richard, his performance working as a consultant for Main St. Company proved that he will be a valuable addition to any company.</blockquote>
-        <div class="name">— Erlich Bachman</div>
-      </div>
-    </section>
+    </div>
   </div>
 <!--<div id="resumePreview">-->
     <!--<section data-name="profile" v-if="resume.profile && resume.profile.name">-->
@@ -533,10 +582,10 @@ export default {
   /* Header name styling */
 
   header {
+    padding-top: .1px;
     background: #68B6E3;
     padding: 50px;
     margin-bottom: 30px;
-    margin-top:30px;
   }
 
   header h1 {
@@ -553,15 +602,18 @@ export default {
   }
   /* End header name styling */
   /* Set width of main body of CV */
-
-  .container {
-    font-size: 0.9em;
-    max-width: 1290px;
-    padding: 40px 100px;
-    margin: 0 auto;
+  #resumePreview {
+    width:1290px;
     background: #ffffff;
     overflow: auto;
     margin-top:15px;
+  }
+  .container {
+    font-size: 0.9em;
+    max-width: 900px;
+    margin: 0 auto;
+    margin-top:15px;
+    padding:10px 15px;
   }
   /* End */
   /* Styling Basics (Name, Contact, About, Profiles) */
@@ -613,7 +665,7 @@ export default {
     margin-top: 10px;
   }
   /* End 'Basics' Styling */
-  /* Work and volunteering experience styling */
+  /* Work and projectsing experience styling */
 
   .work_date,
   .work_position,
@@ -635,17 +687,19 @@ export default {
     margin-top: 10px;
   }
 
+  #awards,
   #work,
-  #volunteer {
+  #education,
+  #projects {
     padding-bottom: 5px;
     border-bottom: 1px #E2E2E2 solid;
   }
-
+  #awards .item,
   #work .item,
-  #volunteer .item {
+  #projects .item {
     margin: 25px 0;
   }
-  /* End work and volunteering */
+  /* End work and projectsing */
   /* Skills, languages, interests and references styling */
 
   #skills {

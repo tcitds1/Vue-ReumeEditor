@@ -11,9 +11,9 @@
                 </li>
                 <li v-for="(item,index) in resumeConfig"
                      :class="{active: item.field === selected}"
-                     @click="selected = item.field;">
+                     @click="selected = item.field;" :title ="item.field" >
 
-                    <svg class="icon">
+                    <svg class="icon" :id="item.field">
                         <use :xlink:href="`#icon-${item.icon}`"></use>
                     </svg>
                 </li>
@@ -28,13 +28,13 @@
                           <div v-if="Array.isArray(value)">
                             <div v-for="(value_inline,index) in value">
                               <input type="text" :value="value_inline"  @input="changeResumeField(`${item.field}.${i}.${key}.${index}`, $event.target.value,[item.field,i,key,index])">
-                              <hr>
+                              <!--<hr>-->
                             </div>
                           </div>
                           <div v-else>
                             <label>{{key}}</label>
-                            <input type="text" :value="value"  @input="changeResumeField(`${item.field}.${i}.${key}`, $event.target.value)">
-                            <hr>
+                            <input type="text" :value="value" :placeholder="key"  @input="changeResumeField(`${item.field}.${i}.${key}`, $event.target.value)">
+                            <!--<hr>-->
                           </div>
                         </div>
 
@@ -43,7 +43,7 @@
 
                 <div v-else class="resumeField" v-for="(value,key) in resume[item.field]">
                     <label> {{key}} </label>
-                    <input type="text" :value="value" @input="changeResumeField(`${item.field}.${key}`, $event.target.value)">
+                    <input type="text" :value="value" :placeholder="key" @input="changeResumeField(`${item.field}.${key}`, $event.target.value)">
                 </div>
                 <!--<button @click = "addResumeSubfield(item)">新建</button>-->
             </li>
@@ -129,16 +129,16 @@ export default {
       }
     }
     > .panels{
-      background: #ffffff;
+      background: #e7e8ea;
       width:450px;
       margin-left:120px;
       margin-right: 30px;
       margin-top: 15px;
-      margin-bottom:20px;
-      box-shadow:0 1px 1px 0 rgba(0,0,0,0.25);
-
+      /*border:1px solid black;*/
+      /*box-shadow:0 1px 1px 0 rgba(0,0,0,0.25);*/
+      /*border:1px solid black;*/
       > li {
-        padding: 24px;
+        /*padding: 24px;*/
         h2{
           margin-bottom: 24px;
         }
@@ -149,6 +149,10 @@ export default {
       width: 28px; // 原设计稿 32px 不好看，改成 24px
       height: 28px;
     }
+    #skills {
+      width:40px !important;
+      height:40px !important;
+    }
     ol{
       list-style: none;
     }
@@ -157,12 +161,15 @@ export default {
         display: block;
       }
       input[type=text]{
-        margin: 16px 0;
-        border: 1px solid #ddd;
-        box-shadow:inset 0 1px 3px 0 rgba(0,0,0,0.25);
+        margin-bottom: 16px;
+        /*border: 1px solid #ddd;*/
+        /*box-shadow:inset 0 1px 3px 0 rgba(0,0,0,0.25);*/
         width: 100%;
-        height: 40px;
-        padding: 0 8px;
+        height: 60px;
+        padding: 10px 8px;
+        padding-left: 20px;
+        border:none;
+
       }
     }
     hr{

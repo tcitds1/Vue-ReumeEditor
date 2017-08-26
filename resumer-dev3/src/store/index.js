@@ -19,6 +19,7 @@ export default new Vuex.Store({
         { field: 'workHistory', icon: 'work', type: 'array', keys: ['company', 'content'] },
         { field: 'education', icon: 'book', type: 'array', keys: ['school', 'content'] },
         { field: 'projects', icon: 'heart', type: 'array', keys: ['name', 'content'] },
+        { field: 'skills', icon:'skills', type: 'array',keys: ['name','level','keywords']},
         { field: 'awards', icon: 'cup', type: 'array', keys: ['name', 'content'] },
     ],
     resume: {
@@ -85,31 +86,23 @@ export default new Vuex.Store({
         {
           "title": "Digital Compression Pioneer Award",
           "date": "2014-11-01",
-          "awarder": "Techcrunch",
+          "address": "Techcrunch",
           "summary": "There is no spoon."
         }
       ],
-
+      //volunteer
       "projects": [
         {
-          "name": "Video compression for 3d media",
-          "publisher": "Hooli",
-          "releaseDate": "2014-10-01",
+          "name": "机器人自动化设计",
+          "platform": "Android",
+          "startDate": "2014-08-01",
+          "endDate": "2014-10-01",
           "website": "http://en.wikipedia.org/wiki/Silicon_Valley_(TV_series)",
           "summary": "Innovative middle-out compression algorithm that changes the way we store data."
         }
       ],
 
       "skills": [
-        {
-          "name": "Web Development",
-          "level": "Master",
-          "keywords": [
-            "HTML",
-            "CSS",
-            "Javascript"
-          ]
-        },
         {
           "name": "Compression",
           "level": "Master",
@@ -118,9 +111,17 @@ export default new Vuex.Store({
             "MP4",
             "GIF"
           ]
+        },
+        {
+          "name": "Web Development",
+          "level": "Master",
+          "keywords": [
+            "HTML",
+            "CSS",
+            "Javascript"
+          ]
         }
       ],
-
       "languages": [
         {
           "language": "English",
