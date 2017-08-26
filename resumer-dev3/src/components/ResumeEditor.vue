@@ -37,7 +37,7 @@
                           </div>
                           <div v-else>
                             <div class="group">
-                              <input type="text" :value="value" @input="changeResumeField(`${item.field}.${key}`, $event.target.value)" required>
+                              <input type="text" :value="value" @input="changeResumeField(`${item.field}.${i}.${key}`, $event.target.value)" required>
                               <span class="highlight"></span>
                               <span class="bar"></span>
                               <label> {{key}} </label>
@@ -141,9 +141,10 @@ export default {
     }
     > .panels{
       background: #fff;
-      width:450px;
-      margin-left:120px;
-      margin-right: 30px;
+      min-width:300px;
+      width: 450px;
+      margin-left:110px;
+      margin-right: 20px;
       margin-top: 15px;
       /*border:1px solid black;*/
       box-shadow:0 1px 1px 0 rgba(0,0,0,0.25);
@@ -188,21 +189,24 @@ export default {
         margin-bottom:45px;
         margin-left:auto;
         margin-right:auto;
-        width:400px;
+
+        min-width: 250px;
       }
       /* 父组件相对定位 */
       input 				{
         font-size:16px;
         padding:10px 10px 10px 5px;
         display:block;
-        width:400px;
         border:none;
         border-bottom:1px solid #757575;
+        margin:0 auto;
+        width:90%;
       }
       input:focus 		{ outline:none; }
 
       /* LABEL ======================================= */
       label 				 {
+        margin-left:5%;
         color:#999;
         font-size:16px;
         font-weight:normal;
@@ -223,7 +227,7 @@ export default {
       }
 
       /* BOTTOM BARS ================================= */
-      .bar 	{ position:relative; display:block; width:400px; }
+      .bar 	{ position:relative; display:block; width:90%; margin:0 auto;}
       .bar:before, .bar:after 	{
         content:'';
         height:2px;

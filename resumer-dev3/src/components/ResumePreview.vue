@@ -607,6 +607,8 @@ export default {
     background: #ffffff;
     overflow: auto;
     margin-top:15px;
+    margin-left:12px;
+    margin-right: 20px;
   }
   .container {
     font-size: 0.9em;
