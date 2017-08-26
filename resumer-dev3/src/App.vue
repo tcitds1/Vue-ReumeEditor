@@ -77,7 +77,7 @@ html {
   >main {
     flex-grow: 1;
     min-width: 1024px;
-    margin-top:16px;
+    margin-top:12px;
     display: flex;
     /*justify-content: space-around;*/
     justify-content: space-between;
