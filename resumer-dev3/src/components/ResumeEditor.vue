@@ -27,24 +27,20 @@
                         <div class="resumeField"v-for="(value,key) in subitem">
                           <div v-if="Array.isArray(value)">
                             <div v-for="(value_inline,index) in value">
-
                               <div class="group">
-                                <input type="text" :value="value_inline"  @input="changeResumeField(`${item.field}.${i}.${key}.${index}`, $event.target.value,[item.field,i,key,index])">
+                                <input type="text" :value="value_inline"  @input="changeResumeField(`${item.field}.${i}.${key}.${index}`, $event.target.value,[item.field,i,key,index])" required>
                                 <span class="highlight"></span>
                                 <span class="bar"></span>
-                                <label>{{index+1}}</label>
+                                <label> {{index+1}} </label>
                               </div>
                             </div>
                           </div>
                           <div v-else>
-                            <!--<label>{{key}}</label>-->
-                            <!--<input type="text" :value="value" :placeholder="key"  @input="changeResumeField(`${item.field}.${i}.${key}`, $event.target.value)">-->
-                            <!--&lt;!&ndash;<hr>&ndash;&gt;-->
                             <div class="group">
-                              <input type="text" :value="value"  @input="changeResumeField(`${item.field}.${key}`, $event.target.value)">
+                              <input type="text" :value="value" @input="changeResumeField(`${item.field}.${key}`, $event.target.value)" required>
                               <span class="highlight"></span>
                               <span class="bar"></span>
-                              <label>{{key}}</label>
+                              <label> {{key}} </label>
                             </div>
                           </div>
                         </div>
@@ -54,12 +50,11 @@
 
                 <div v-else class="resumeField" v-for="(value,key) in resume[item.field]">
                     <div class="group">
-                      <input type="text" :value="value"  @input="changeResumeField(`${item.field}.${key}`, $event.target.value)">
+                      <input type="text" :value="value" @input="changeResumeField(`${item.field}.${key}`, $event.target.value)" required>
                       <span class="highlight"></span>
                       <span class="bar"></span>
-                      <label>{{key}}</label>
+                      <label> {{key}} </label>
                     </div>
-                    <!--<label> {{key}} </label>-->
                 </div>
                 <!--<button @click = "addResumeSubfield(item)">新建</button>-->
             </li>
