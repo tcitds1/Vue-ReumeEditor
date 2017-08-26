@@ -2,27 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="beb7e8d8-5b83-457e-b670-481c5d71c720" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/resumer-dev3/dist/static/css/app.2a745332b4a4cfdeca1b9f33699df870.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/resumer-dev3/dist/static/css/app.2a745332b4a4cfdeca1b9f33699df870.css.map" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/resumer-dev3/dist/static/js/app.ce18c6b238c53d71b673.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/resumer-dev3/dist/static/js/app.ce18c6b238c53d71b673.js.map" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/resumer-dev3/dist/static/js/manifest.995a2268bcb2f5b4e5a4.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/resumer-dev3/dist/static/js/manifest.995a2268bcb2f5b4e5a4.js.map" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/resumer-dev3/dist/static/js/vendor.986369aa12e34a4a2188.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/resumer-dev3/dist/static/js/vendor.986369aa12e34a4a2188.js.map" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/resumer-dev3/dist/static/svg_icons/add.svg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/resumer-dev3/dist/static/svg_icons/black.svg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/resumer-dev3/dist/static/svg_icons/book.svg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/resumer-dev3/dist/static/svg_icons/cup.svg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/resumer-dev3/dist/static/svg_icons/heart.svg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/resumer-dev3/dist/static/svg_icons/home.svg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/resumer-dev3/dist/static/svg_icons/id.svg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/resumer-dev3/dist/static/svg_icons/phone.svg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/resumer-dev3/dist/static/svg_icons/skills.svg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/resumer-dev3/dist/static/svg_icons/star.svg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/resumer-dev3/dist/static/svg_icons/work.svg" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resumer-dev3/src/App.vue" afterPath="$PROJECT_DIR$/resumer-dev3/src/App.vue" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resumer-dev3/src/components/Preview.vue" afterPath="$PROJECT_DIR$/resumer-dev3/src/components/Preview.vue" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
@@ -100,8 +79,8 @@
       <file leaf-file-name="Preview.vue" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/resumer-dev3/src/components/Preview.vue">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="40">
-              <caret line="588" column="11" lean-forward="false" selection-start-line="588" selection-start-column="11" selection-end-line="588" selection-end-column="11" />
+            <state relative-caret-position="380">
+              <caret line="262" column="0" lean-forward="false" selection-start-line="262" selection-start-column="0" selection-end-line="262" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -158,10 +137,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>projects</find>
-      <find>awards</find>
-      <find>clear</find>
-      <find>ol</find>
       <find>border</find>
       <find>hr</find>
       <find>300px</find>
@@ -188,6 +163,10 @@
       <find>resumepr</find>
       <find>width</find>
       <find>header</find>
+      <find>expor</find>
+      <find>button</find>
+      <find>comeback</find>
+      <find>返回</find>
     </findStrings>
     <replaceStrings>
       <replace>projects</replace>
@@ -399,7 +378,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="92240000" />
+    <option name="totallyTimeSpent" value="93100000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -888,8 +867,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/resumer-dev3/src/components/Preview.vue">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="40">
-          <caret line="588" column="11" lean-forward="false" selection-start-line="588" selection-start-column="11" selection-end-line="588" selection-end-column="11" />
+        <state relative-caret-position="380">
+          <caret line="262" column="0" lean-forward="false" selection-start-line="262" selection-start-column="0" selection-end-line="262" selection-end-column="0" />
           <folding />
         </state>
       </provider>
