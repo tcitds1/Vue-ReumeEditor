@@ -26,7 +26,7 @@ export default new Vuex.Store({
       "profile": {
         "name": "易文祥",
         "profession": "SoftwareEngineer",
-        "summary": "我就是喜欢前端啊"
+        "summary": "我就是喜欢前端啊",
         // "Internet": [
         //   {
         //     "network": "Twitter",
@@ -48,15 +48,16 @@ export default new Vuex.Store({
         "region": "California"
       },
       "contacts": {
-        "email": "richard.hendriks@gmail.com",
-        "phone": "(912) 555-4321",
-        "website": "http://richardhendricks.com",
+        "email": "konyahoshi@gmail.com",
+        "phone": "13131313113",
+        "website": "https://github.com/tictds1",
+        "address": "湖南省长沙市"
       },
       "workHistory": [
         {
           "company": "东云研究所",
           "position": "CEO/President",
-          "website": "http://piedpiper.com",
+          "website": "http://dongyun.com",
           "startDate": "2013-12-01",
           "endDate": "2014-12-01",
           "summary" : "今天又是和平的一天",
@@ -97,7 +98,7 @@ export default new Vuex.Store({
           "platform": "Android",
           "startDate": "2014-08-01",
           "endDate": "2014-10-01",
-          "website": "http://en.wikipedia.org/wiki/Silicon_Valley_(TV_series)",
+          "website": "http://robert.com",
           "summary": "Innovative middle-out compression algorithm that changes the way we store data."
         }
       ],

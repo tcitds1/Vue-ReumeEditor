@@ -23,7 +23,6 @@
             <li v-for="item in resumeConfig" v-show="item.field === selected">
                 <div v-if = "item.type === 'array'">
                     <div v-for="(subitem, i) in resume[item.field]">
-
                         <div class="resumeField"v-for="(value,key) in subitem">
                           <div v-if="Array.isArray(value)">
                             <div v-for="(value_inline,index) in value">
@@ -44,8 +43,9 @@
                             </div>
                           </div>
                         </div>
-
+                      <button @click = "removeResumeSubfield(item.field,i)">remove</button>
                     </div>
+                    <button>add</button>
                 </div>
 
                 <div v-else class="resumeField" v-for="(value,key) in resume[item.field]">
@@ -201,6 +201,7 @@ export default {
         border-bottom:1px solid #757575;
         margin:0 auto;
         width:90%;
+        height: 35px;
       }
       input:focus 		{ outline:none; }
 
@@ -213,7 +214,7 @@ export default {
         position:absolute;
         pointer-events:none;
         left:5px;
-        top:10px;
+        top:6px;
         transition:0.2s ease all;
         -moz-transition:0.2s ease all;
         -webkit-transition:0.2s ease all;
@@ -257,7 +258,7 @@ export default {
         height:60%;
         width:100px;
         top:25%;
-        left:0;
+        left:5%;
         pointer-events:none;
         opacity:0.5;
       }
