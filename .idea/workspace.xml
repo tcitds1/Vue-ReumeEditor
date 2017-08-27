@@ -2,24 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="beb7e8d8-5b83-457e-b670-481c5d71c720" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/resumer-dev2/dist/index.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/resumer-dev2/dist/static/css/app.81dc5ca75f73a6a1569ae3c85a35d719.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/resumer-dev2/dist/static/css/app.81dc5ca75f73a6a1569ae3c85a35d719.css.map" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/resumer-dev2/dist/static/js/app.c54a322ac232d1ce84d6.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/resumer-dev2/dist/static/js/app.c54a322ac232d1ce84d6.js.map" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/resumer-dev2/dist/static/js/manifest.749ef88c2f20780e81ff.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/resumer-dev2/dist/static/js/manifest.749ef88c2f20780e81ff.js.map" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/resumer-dev2/dist/static/js/vendor.892f4d3f7a65ba48f05e.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/resumer-dev2/dist/static/js/vendor.892f4d3f7a65ba48f05e.js.map" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/resumer-dev2/dist/static/svg_icons/add.svg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/resumer-dev2/dist/static/svg_icons/book.svg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/resumer-dev2/dist/static/svg_icons/cup.svg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/resumer-dev2/dist/static/svg_icons/heart.svg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/resumer-dev2/dist/static/svg_icons/id.svg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/resumer-dev2/dist/static/svg_icons/phone.svg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/resumer-dev2/dist/static/svg_icons/work.svg" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resumer-dev2/src/App.vue" afterPath="$PROJECT_DIR$/resumer-dev2/src/App.vue" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -37,26 +20,46 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="index.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/resumer-dev2/src/store/index.js">
+      <file leaf-file-name="ResumeEditor.vue" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/resumer-dev3/src/components/ResumeEditor.vue">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="255">
-              <caret line="15" column="19" lean-forward="false" selection-start-line="15" selection-start-column="19" selection-end-line="16" selection-end-column="84" />
+            <state relative-caret-position="442">
+              <caret line="82" column="41" lean-forward="false" selection-start-line="82" selection-start-column="41" selection-end-line="82" selection-end-column="41" />
               <folding>
-                <element signature="e#0#23#0" expanded="true" />
+                <element signature="n#nav#0;n#div#0;n#template#0;n#!!top" expanded="false" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="App.vue" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/resumer-dev2/src/App.vue">
+      <file leaf-file-name="ResumePreview.vue" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/resumer-dev3/src/components/ResumePreview.vue">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="431">
-              <caret line="36" column="8" lean-forward="false" selection-start-line="36" selection-start-column="8" selection-end-line="36" selection-end-column="8" />
+            <state relative-caret-position="652">
+              <caret line="733" column="2" lean-forward="false" selection-start-line="733" selection-start-column="2" selection-end-line="733" selection-end-column="2" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="index.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/resumer-dev3/src/router/index.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="255">
+              <caret line="15" column="0" lean-forward="false" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
               <folding>
-                <element signature="e#267#294#0" expanded="true" />
+                <element signature="e#0#21#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/resumer-dev2/dist/index.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="70" lean-forward="false" selection-start-line="0" selection-start-column="70" selection-end-line="0" selection-end-column="70" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -72,7 +75,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>overflow</find>
       <find>font-si</find>
       <find>padding:10</find>
       <find>label</find>
@@ -102,6 +104,7 @@
       <find>addresum</find>
       <find>re</find>
       <find>init</find>
+      <find>getAV</find>
     </findStrings>
     <replaceStrings>
       <replace>projects</replace>
@@ -237,19 +240,6 @@
             <path>
               <item name="Vue" type="b2602c69:ProjectViewProjectNode" />
               <item name="Vue" type="462c0819:PsiDirectoryNode" />
-              <item name="resumer-dev2" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Vue" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Vue" type="462c0819:PsiDirectoryNode" />
-              <item name="resumer-dev2" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="store" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Vue" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Vue" type="462c0819:PsiDirectoryNode" />
               <item name="resumer-dev3" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -347,12 +337,12 @@
       <workItem from="1503559559894" duration="7104000" />
       <workItem from="1503580843296" duration="33388000" />
       <workItem from="1503716424965" duration="12080000" />
-      <workItem from="1503843506033" duration="2379000" />
+      <workItem from="1503843506033" duration="2611000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="98357000" />
+    <option name="totallyTimeSpent" value="98589000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -748,14 +738,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/resumer-dev3/src/components/ResumePreview.vue">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="12461">
-          <caret line="733" column="2" lean-forward="false" selection-start-line="733" selection-start-column="2" selection-end-line="733" selection-end-column="2" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/resumer-dev3/src/main.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="221">
@@ -763,13 +745,6 @@
           <folding>
             <element signature="n#!!doc" expanded="false" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resumer-dev3/src/router/index.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
       </provider>
     </entry>
@@ -799,6 +774,26 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/resumer-dev2/src/App.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="431">
+          <caret line="36" column="8" lean-forward="false" selection-start-line="36" selection-start-column="8" selection-end-line="36" selection-end-column="8" />
+          <folding>
+            <element signature="e#267#294#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resumer-dev2/src/store/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="15" column="19" lean-forward="false" selection-start-line="15" selection-start-column="19" selection-end-line="16" selection-end-column="84" />
+          <folding>
+            <element signature="e#0#23#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/resumer-dev3/src/components/ResumeEditor.vue">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="442">
@@ -809,31 +804,29 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/resumer-dev3/src/components/ResumePreview.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="652">
+          <caret line="733" column="2" lean-forward="false" selection-start-line="733" selection-start-column="2" selection-end-line="733" selection-end-column="2" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resumer-dev3/src/router/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="15" column="0" lean-forward="false" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#21#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/resumer-dev2/dist/index.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="70" lean-forward="false" selection-start-line="0" selection-start-column="70" selection-end-line="0" selection-end-column="70" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resumer-dev2/src/store/index.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="15" column="19" lean-forward="false" selection-start-line="15" selection-start-column="19" selection-end-line="16" selection-end-column="84" />
-          <folding>
-            <element signature="e#0#23#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resumer-dev2/src/App.vue">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="431">
-          <caret line="36" column="8" lean-forward="false" selection-start-line="36" selection-start-column="8" selection-end-line="36" selection-end-column="8" />
-          <folding>
-            <element signature="e#267#294#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
