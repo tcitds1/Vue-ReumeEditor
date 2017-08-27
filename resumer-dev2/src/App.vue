@@ -21,7 +21,7 @@ import ResumeEditor from './components/ResumeEditor'
 import ResumePreview from './components/ResumePreview'
 import icons from './assets/icons'
 import store from './store/index'
-import getAVUser from './getAVUser'
+// import getAVUser from './getAVUser'
 export default {
   name: 'app',
   data: function () {
@@ -45,20 +45,20 @@ export default {
     // }
     // this.$store.commit('initState', state)
     this.$store.commit('initState')
-    let user = getAVUser()
-    this.$store.commit('setUser', user)
-    if (user.id) {
-      this.$store.dispatch('fetchResume')
-    } else {
-      let state = localStorage.getItem('state')
-      if (state) {
-        this.$store.commit('initState', JSON.parse(state))
-      }
-    }
-    window.onbeforeunload = () => {
-      let state = JSON.stringify(this.$store.state)
-      window.localStorage.setItem('state', state)
-    }
+    //    let user = getAVUser()
+    //    this.$store.commit('setUser', user)
+    //    if (user.id) {
+    //      this.$store.dispatch('fetchResume')
+    //    } else {
+    //      let state = localStorage.getItem('state')
+    //      if (state) {
+    //        this.$store.commit('initState', JSON.parse(state))
+    //      }
+    //    }
+    //    window.onbeforeunload = () => {
+    //      let state = JSON.stringify(this.$store.state)
+    //      window.localStorage.setItem('state', state)
+    //    }
   }
 }
 </script>
