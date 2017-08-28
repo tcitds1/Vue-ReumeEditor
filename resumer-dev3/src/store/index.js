@@ -198,23 +198,29 @@ export default new Vuex.Store({
     removeUser (state) {
       state.user.id = ''
     },
-    addResumeSubfield (state, field) {
-      let empty = {}
-      if (state.resume[field] instanceof Array === true) {
-        state.resume[field].push(empty)
-        state.resumeConfig.filter((i) => i.field === field)[0].keys.map((key) => {
-          if(Array.isArray(key)){
-            Vue.set(empty, key[0], [''])
-          }
-          else{
-            Vue.set(empty, key, '')
-          }
-        })
+    addResumeSubfield (state, {field,keys}) {
+      if(keys){
+        // state.resume[keys[0][keys[1]][keys[2]]].push(keys[3])
+        (state.resume[keys[0]][keys[1]][keys[2]]).push(keys[3])
+      }
+      else{
+        let empty = {}
+        if (state.resume[field] instanceof Array === true) {
+          state.resume[field].push(empty)
+          state.resumeConfig.filter((i) => i.field === field)[0].keys.map((key) => {
+            if(Array.isArray(key)){
+              Vue.set(empty, key[0], [''])
+            }
+            else{
+              Vue.set(empty, key, '')
+            }
+          })
+        }
       }
     },
     removeResumeSubfield (state, {field, index, keys}) {
       if(keys){
-        state.resume[arr[0]][arr[1]][arr[2]],arr[3]
+        state.resume[keys[0]][keys[1]][keys[2]].splice(keys[3],1)
       }
       else{
         state.resume[field].splice(index, 1)

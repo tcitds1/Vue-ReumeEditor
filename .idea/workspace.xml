@@ -2,14 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="beb7e8d8-5b83-457e-b670-481c5d71c720" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resumer-dev3/static/svg_icons/add1.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resumer-dev3/static/svg_icons/delete.svg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resumer-dev3/src/assets/icons.js" afterPath="$PROJECT_DIR$/resumer-dev3/src/assets/icons.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resumer-dev3/src/components/ResumeEditor.vue" afterPath="$PROJECT_DIR$/resumer-dev3/src/components/ResumeEditor.vue" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resumer-dev3/src/components/ResumePreview.vue" afterPath="$PROJECT_DIR$/resumer-dev3/src/components/ResumePreview.vue" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resumer-dev3/src/store/index.js" afterPath="$PROJECT_DIR$/resumer-dev3/src/store/index.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resumer-dev3/static/svg_icons/add.svg" afterPath="$PROJECT_DIR$/resumer-dev3/static/svg_icons/add.svg" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -27,28 +21,6 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="ResumePreview.vue" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/resumer-dev3/src/components/ResumePreview.vue">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1743">
-              <caret line="266" column="31" lean-forward="false" selection-start-line="266" selection-start-column="31" selection-end-line="266" selection-end-column="31" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ResumeEditor.vue" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/resumer-dev3/src/components/ResumeEditor.vue">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="260">
-              <caret line="111" column="42" lean-forward="true" selection-start-line="111" selection-start-column="42" selection-end-line="111" selection-end-column="42" />
-              <folding>
-                <element signature="n#nav#0;n#div#0;n#template#0;n#!!top" expanded="false" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="add1.svg" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/resumer-dev3/static/svg_icons/add1.svg">
           <provider selected="true" editor-type-id="text-editor">
@@ -79,11 +51,37 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="index.js" pinned="false" current-in-tab="true">
+      <file leaf-file-name="index.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/resumer-dev3/src/store/index.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="243">
-              <caret line="216" column="8" lean-forward="true" selection-start-line="216" selection-start-column="8" selection-end-line="216" selection-end-column="8" />
+            <state relative-caret-position="3009">
+              <caret line="181" column="12" lean-forward="false" selection-start-line="181" selection-start-column="10" selection-end-line="181" selection-end-column="12" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ResumeEditor.vue" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/resumer-dev3/src/components/ResumeEditor.vue">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="362">
+              <caret line="231" column="0" lean-forward="false" selection-start-line="231" selection-start-column="0" selection-end-line="231" selection-end-column="0" />
+              <folding>
+                <element signature="n#nav#0;n#div#0;n#template#0;n#!!top" expanded="false" />
+                <element signature="n#div#0;n#div#0;n#div#0;n#li#0;n#ol#0;n#div#0;n#template#0;n#!!top" expanded="false" />
+                <element signature="n#div#0;n#div#0;n#div#0;n#div#0;n#li#0;n#ol#0;n#div#0;n#template#0;n#!!top" expanded="false" />
+                <element signature="n#div#1;n#div#0;n#div#0;n#div#0;n#li#0;n#ol#0;n#div#0;n#template#0;n#!!top" expanded="false" />
+                <element signature="n#div#1;n#li#0;n#ol#0;n#div#0;n#template#0;n#!!top" expanded="false" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ResumePreview.vue" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/resumer-dev3/src/components/ResumePreview.vue">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="260">
+              <caret line="237" column="5" lean-forward="false" selection-start-line="237" selection-start-column="0" selection-end-line="237" selection-end-column="5" />
               <folding />
             </state>
           </provider>
@@ -110,36 +108,36 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>addre</find>
-      <find>console</find>
-      <find>content</find>
-      <find>button</find>
-      <find>array</find>
-      <find>h3</find>
-      <find>.field</find>
-      <find>h4</find>
-      <find>input</find>
-      <find>highlight</find>
-      <find>.remove</find>
-      <find>removeb</find>
-      <find>removebutton</find>
-      <find>svg</find>
-      <find>id</find>
-      <find>delte</find>
-      <find>group</find>
-      <find>addresum</find>
-      <find>add</find>
       <find>#add</find>
       <find>&quot;add</find>
       <find>#ADD</find>
       <find>path</find>
-      <find>new</find>
       <find>NEW</find>
-      <find>addnew</find>
       <find>delete</find>
       <find>removeRE</find>
       <find>removeR</find>
+      <find>new</find>
+      <find>expor</find>
+      <find>button</find>
+      <find>removebutton</find>
+      <find>addnew</find>
+      <find>addresume</find>
+      <find>addresumesub</find>
+      <find>addresumeSubfield</find>
+      <find>countbutton</find>
+      <find>push</find>
+      <find>resumefield</find>
+      <find>arrayFi</find>
+      <find>arrayFiel</find>
+      <find>resumeField</find>
       <find>remove</find>
+      <find>style</find>
+      <find>border</find>
+      <find>panel</find>
+      <find>div</find>
+      <find>rborder</find>
+      <find>add</find>
+      <find>bigbutton</find>
     </findStrings>
     <replaceStrings>
       <replace>projects</replace>
@@ -178,8 +176,8 @@
         <option value="$PROJECT_DIR$/resumer-dev2/src/App.vue" />
         <option value="$PROJECT_DIR$/resumer-dev3/src/components/ResumePreview.vue" />
         <option value="$PROJECT_DIR$/resumer-dev3/src/components/Topbar.vue" />
-        <option value="$PROJECT_DIR$/resumer-dev3/src/components/ResumeEditor.vue" />
         <option value="$PROJECT_DIR$/resumer-dev3/src/store/index.js" />
+        <option value="$PROJECT_DIR$/resumer-dev3/src/components/ResumeEditor.vue" />
       </list>
     </option>
   </component>
@@ -355,12 +353,12 @@
       <workItem from="1503716424965" duration="12080000" />
       <workItem from="1503843506033" duration="3634000" />
       <workItem from="1503898329334" duration="1026000" />
-      <workItem from="1503899436842" duration="10969000" />
+      <workItem from="1503899436842" duration="18924000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="111607000" />
+    <option name="totallyTimeSpent" value="119562000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -373,7 +371,6 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32934782" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Debug Logs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -381,7 +378,7 @@
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32934782" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Execute Anonymous" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.22934783" sideWeight="0.49789253" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.22934783" sideWeight="0.49789253" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.16332982" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32934782" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -450,7 +447,16 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="XDebuggerManager">
-    <breakpoint-manager />
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/resumer-dev3/src/components/ResumeEditor.vue</url>
+          <line>27</line>
+          <properties />
+        </line-breakpoint>
+      </breakpoints>
+      <option name="time" value="1" />
+    </breakpoint-manager>
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
@@ -796,22 +802,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/resumer-dev3/src/components/Topbar.vue">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="771">
-          <caret line="102" column="35" lean-forward="false" selection-start-line="102" selection-start-column="35" selection-end-line="102" selection-end-column="35" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resumer-dev3/src/components/ResumePreview.vue">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1743">
-          <caret line="266" column="31" lean-forward="false" selection-start-line="266" selection-start-column="31" selection-end-line="266" selection-end-column="31" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/resumer-dev3/static/svg_icons/delete.svg">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -836,21 +826,41 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/resumer-dev3/src/components/ResumeEditor.vue">
+    <entry file="file://$PROJECT_DIR$/resumer-dev3/src/components/ResumePreview.vue">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="260">
-          <caret line="111" column="42" lean-forward="true" selection-start-line="111" selection-start-column="42" selection-end-line="111" selection-end-column="42" />
-          <folding>
-            <element signature="n#nav#0;n#div#0;n#template#0;n#!!top" expanded="false" />
-          </folding>
+          <caret line="237" column="5" lean-forward="false" selection-start-line="237" selection-start-column="0" selection-end-line="237" selection-end-column="5" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resumer-dev3/src/components/Topbar.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="771">
+          <caret line="102" column="35" lean-forward="false" selection-start-line="102" selection-start-column="35" selection-end-line="102" selection-end-column="35" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/resumer-dev3/src/store/index.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="243">
-          <caret line="216" column="8" lean-forward="true" selection-start-line="216" selection-start-column="8" selection-end-line="216" selection-end-column="8" />
+        <state relative-caret-position="3009">
+          <caret line="181" column="12" lean-forward="false" selection-start-line="181" selection-start-column="10" selection-end-line="181" selection-end-column="12" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resumer-dev3/src/components/ResumeEditor.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="362">
+          <caret line="231" column="0" lean-forward="false" selection-start-line="231" selection-start-column="0" selection-end-line="231" selection-end-column="0" />
+          <folding>
+            <element signature="n#nav#0;n#div#0;n#template#0;n#!!top" expanded="false" />
+            <element signature="n#div#0;n#div#0;n#div#0;n#li#0;n#ol#0;n#div#0;n#template#0;n#!!top" expanded="false" />
+            <element signature="n#div#0;n#div#0;n#div#0;n#div#0;n#li#0;n#ol#0;n#div#0;n#template#0;n#!!top" expanded="false" />
+            <element signature="n#div#1;n#div#0;n#div#0;n#div#0;n#li#0;n#ol#0;n#div#0;n#template#0;n#!!top" expanded="false" />
+            <element signature="n#div#1;n#li#0;n#ol#0;n#div#0;n#template#0;n#!!top" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>

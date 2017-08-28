@@ -22,8 +22,8 @@
         <ol class = "panels">
             <li v-for="item in resumeConfig" v-show="item.field === selected">
                 <h3 class="fieldName">{{item.field}}</h3>
-                <div v-if = "item.type === 'array'">
-                    <div v-for="(subitem, i) in resume[item.field]">
+                <div v-if = "item.type === 'array'" class="arrayCt">
+                    <div v-for="(subitem, i) in resume[item.field]" class = "arrayResume">
                         <div class="resumeField"v-for="(value,key) in subitem">
                           <div v-if="Array.isArray(value)">
                             <h4 class = "keywords">{{key}}</h4>
@@ -32,7 +32,7 @@
                               <div class="group array">
                                 <input type="text" :value="value_inline"  @input="changeResumeField(`${item.field}.${i}.${key}.${index}`, $event.target.value,[item.field,i,key,index])" required>
                                 <!--remove选项-->
-                                <div class = "removebutton" @click = "removeResumeSubfield(item.field,i,[item.field,i,key,index])">
+                                <div class = "countbutton" @click = "removeResumeSubfield(item.field,i,[item.field,i,key,index])">
                                   <svg class="icon" id="delete">
                                     <use :xlink:href="`#icon-delete`"></use>
                                   </svg>
@@ -44,8 +44,8 @@
                             </div>
                             <!--添加数组中的项-->
                             <div class="group array">
-                              <input type="text" :value="addNew" required>
-                              <div class = "removebutton" @click = "">
+                              <input type="text" :value="addnew" required>
+                              <div class = "countbutton" @click = "addResumeSubfield(item.field,[item.field,i,key,addnew])">
                                 <svg class="icon" id="add">
                                   <use :xlink:href="`#icon-add1`"></use>
                                 </svg>
@@ -64,9 +64,10 @@
                             </div>
                           </div>
                         </div>
-                      <button @click = "removeResumeSubfield(item.field,i)">remove</button>
+                      <div class = "Rborder"></div>
+                      <button @click = "removeResumeSubfield(item.field,i)" class="btRemove bigButton">remove</button>
                     </div>
-                    <button @click = "addResumeSubfield(item.field)">add</button>
+                    <button @click = "addResumeSubfield(item.field)" class="btAdd bigButton">add</button>
                 </div>
 
                 <div v-else class="resumeField" v-for="(value,key) in resume[item.field]">
@@ -86,9 +87,9 @@
 import getAVUser from '../getAVUser'
 export default {
   name: 'ResumeEditor',
-  date () {
+  data () {
     return {
-      addNew:''
+      addnew:''
     }
   },
   methods: {
@@ -99,8 +100,8 @@ export default {
     test (value) {
       console.log(value)
     },
-    addResumeSubfield (field) {
-      this.$store.commit('addResumeSubfield', field)
+    addResumeSubfield (field,keys) {
+      this.$store.commit('addResumeSubfield', {field,keys})
       if (getAVUser().id) {
         this.$store.dispatch('saveResume')
       }
@@ -166,11 +167,19 @@ export default {
       }
     }
     > .panels{
+      .Rborder {
+        border-bottom: 4px solid #58afd1;
+        width:90%;
+        margin:10px auto;
+      }
       .fieldName {
         width:90%;
         margin: 20px 4% 20px 6% ;
-
       }
+      /*.arrayResume {*/
+        /*border-bottom: 1px solid black;*/
+        /*border*/
+      /*}*/
       background: #fff;
       min-width:270px;
       width: 450px;
@@ -214,6 +223,13 @@ export default {
         /*border:none;*/
 
       /*}*/
+      arrayCt {
+        position: relative;
+      }
+      .bigButton {
+        position: absolute;
+      }
+
       h4,h5{
         width:90%;
         margin:0 auto;
@@ -252,7 +268,7 @@ export default {
           -moz-transition:0.2s ease all;
           -webkit-transition:0.2s ease all;
         }
-        .removebutton {
+        .countbutton {
           position: absolute;
           right:5%;
           top:20%;
