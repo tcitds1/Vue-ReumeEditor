@@ -64,7 +64,7 @@
                             </div>
                           </div>
                         </div>
-                      <div class = "Rborder"></div>
+                      <!--<div class = "Rborder"></div>-->
                       <button @click = "removeResumeSubfield(item.field,i)" class="btRemove bigButton">remove</button>
                     </div>
                     <button @click = "addResumeSubfield(item.field)" class="btAdd bigButton">add</button>
@@ -167,8 +167,36 @@ export default {
       }
     }
     > .panels{
+      .arrayResume + .arrayResume {
+        margin-top:120px;
+      }
+      .arrayCt {
+        position: relative;
+      }
+      .bigButton {
+        position: absolute;
+        width:100px;
+        height:40px;
+        color:#ffffff;
+        border:none;
+        border-radius: 4px;
+        opacity: .7;
+        cursor: pointer;
+      }
+      .bigButton:hover {
+        opacity: 1;
+      }
+      .btRemove {
+        right:5%;
+        background-color:#c0392b;
+      }
+      .btAdd {
+        left:5%;
+        background-color: #02af5f;
+      }
+
       .Rborder {
-        border-bottom: 4px solid #58afd1;
+        border-bottom: 4px solid rgba(138, 121, 210, 0.46);
         width:90%;
         margin:10px auto;
       }
@@ -223,12 +251,7 @@ export default {
         /*border:none;*/
 
       /*}*/
-      arrayCt {
-        position: relative;
-      }
-      .bigButton {
-        position: absolute;
-      }
+
 
       h4,h5{
         width:90%;
@@ -275,14 +298,21 @@ export default {
           cursor: pointer;
         }
         #delete {
-          color:#efa7a7;
+          color:#c0392b;
+          opacity: .7;
+        }
+        #delete:hover {
+          opacity: 1;
         }
         #add {
-          color:#95dec7;
+          color:#02af5f;
           width:28px;
           height:28px;
+          opacity: .7;
         }
-
+        #add:hover {
+          opacity: 1;
+        }
         /* active state */
         input:focus ~ label, input:valid ~ label 		{
           top:-20px;
