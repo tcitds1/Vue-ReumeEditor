@@ -14,19 +14,19 @@ export default new Vuex.Store({
       username: ''
     },
     resumeConfig: [
-        {field: 'profile', icon: 'id', type:"object", keys: ['name', 'city', 'title', 'birthday']},
-        { field: 'contacts', icon: 'phone', type: 'object', keys: ['contact', 'content'] },
-        { field: 'workHistory', icon: 'work', type: 'array', keys: ['company', 'content'] },
-        { field: 'education', icon: 'book', type: 'array', keys: ['school', 'content'] },
-        { field: 'projects', icon: 'heart', type: 'array', keys: ['name', 'content'] },
-        { field: 'skills', icon:'skills', type: 'array',keys: ['name','level','keywords']},
-        { field: 'awards', icon: 'cup', type: 'array', keys: ['name', 'content'] },
+        {field: 'profile', icon: 'id', type:"object", keys: ['name', 'profession', 'About']},
+        { field: 'contacts', icon: 'phone', type: 'object', keys: ['email', 'phome', 'github', 'address' ] },
+        { field: 'workHistory', icon: 'work', type: 'array', keys: ['company', 'position', 'website', 'startDate', 'endDate', 'summary',['hightlights'] ] },
+        { field: 'education', icon: 'book', type: 'array', keys: ['school','area','studyType','startDate','endDate','gpa', ['courses']] },
+        { field: 'projects', icon: 'heart', type: 'array', keys: ['name', 'platform','startDate','endDate','website','summary'] },
+        { field: 'skills', icon:'skills', type: 'array',keys: ['name','level', ['keywords']]},
+        { field: 'awards', icon: 'cup', type: 'array', keys: ['title','date','address','summary'] },
     ],
     resume: {
       "profile": {
         "name": "易文祥",
         "profession": "SoftwareEngineer",
-        "summary": "我就是喜欢前端啊",
+        "About": "我就是喜欢前端啊",
         // "Internet": [
         //   {
         //     "network": "Twitter",
@@ -50,7 +50,7 @@ export default new Vuex.Store({
       "contacts": {
         "email": "konyahoshi@gmail.com",
         "phone": "13131313113",
-        "website": "https://github.com/tictds1",
+        "github": "https://github.com/tcitds1",
         "address": "湖南省长沙市"
       },
       "workHistory": [
@@ -70,9 +70,9 @@ export default new Vuex.Store({
       ],
       "education": [
         {
-          "school": "University of Oklahoma",
-          "area": "Information Technology",
-          "studyType": "Bachelor",
+          "school": "皇家林业科技大学",
+          "area": "湖南省长沙市",
+          "studyType": "本科",
           "startDate": "2011-06-01",
           "endDate": "2014-01-01",
           "gpa": "4.0",
@@ -198,18 +198,28 @@ export default new Vuex.Store({
     removeUser (state) {
       state.user.id = ''
     },
-    addResumeSubfield (state, { field }) {
+    addResumeSubfield (state, field) {
       let empty = {}
       if (state.resume[field] instanceof Array === true) {
         state.resume[field].push(empty)
         state.resumeConfig.filter((i) => i.field === field)[0].keys.map((key) => {
-          Vue.set(empty, key, '')
+          if(Array.isArray(key)){
+            Vue.set(empty, key[0], [''])
+          }
+          else{
+            Vue.set(empty, key, '')
+          }
         })
       }
     },
-    removeResumeSubfield (state, {field, index}) {
+    removeResumeSubfield (state, {field, index, keys}) {
+      if(keys){
+        state.resume[arr[0]][arr[1]][arr[2]],arr[3]
+      }
+      else{
+        state.resume[field].splice(index, 1)
+      }
       // console.log('state' + field + index)
-      state.resume[field].splice(index, 1)
       // console.dir(state.resume[field])
     },
     setResumeId (state, {id}) {

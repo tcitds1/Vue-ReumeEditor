@@ -10,7 +10,7 @@
         <div class="contact">
           <h3>Contact</h3>
           <div class="website">
-            <strong>Website</strong>{{resume.contacts.website}}</div>
+            <strong>Github</strong><a :href="resume.contacts.github">{{resume.contacts.github}}</a></div>
           <div class="email">
             <strong>Email</strong>
             <!--<a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="24564d474c4556400a4c414a40564d4f57644349454d480a474b49">[email&nbsp;protected]</a>-->
@@ -18,10 +18,12 @@
           </div>
           <div class="phone">
             <strong>Phone</strong>{{resume.contacts.phone}}</div>
+          <div class="address">
+            <strong>Address</strong>{{resume.contacts.address}}</div>
         </div>
         <div class="summary">
-          <h3>About</h3>
-          <p>{{resume.profile.summary}}</p>
+          <h3 class = "about">About</h3>
+          <p>{{resume.profile.About}}</p>
         </div>
         <!--<section id="profiles">-->
         <!--<div class="item">-->
@@ -261,6 +263,9 @@ export default {
   }
   /*! normalize.css 2012-02-07T12:37 UTC - http://github.com/necolas/normalize.css */
 
+  .about {
+    margin-top:15px !important;
+  }
   article,
   aside,
   details,
@@ -641,10 +646,11 @@ export default {
     padding-bottom: 10px;
   }
 
+  .address,
   .website,
   .email,
   .phone {
-    margin-bottom: 10px;
+    margin-bottom: 15px;
     float: left;
     width: 50%;
   }

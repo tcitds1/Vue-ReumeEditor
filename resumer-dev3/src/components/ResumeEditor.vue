@@ -21,17 +21,38 @@
         </nav>
         <ol class = "panels">
             <li v-for="item in resumeConfig" v-show="item.field === selected">
+                <h3 class="fieldName">{{item.field}}</h3>
                 <div v-if = "item.type === 'array'">
                     <div v-for="(subitem, i) in resume[item.field]">
                         <div class="resumeField"v-for="(value,key) in subitem">
                           <div v-if="Array.isArray(value)">
+                            <h4 class = "keywords">{{key}}</h4>
+                            <!--数组中的项-->
                             <div v-for="(value_inline,index) in value">
-                              <div class="group">
+                              <div class="group array">
                                 <input type="text" :value="value_inline"  @input="changeResumeField(`${item.field}.${i}.${key}.${index}`, $event.target.value,[item.field,i,key,index])" required>
+                                <!--remove选项-->
+                                <div class = "removebutton" @click = "removeResumeSubfield(item.field,i,[item.field,i,key,index])">
+                                  <svg class="icon" id="delete">
+                                    <use :xlink:href="`#icon-delete`"></use>
+                                  </svg>
+                                </div>
                                 <span class="highlight"></span>
                                 <span class="bar"></span>
                                 <label> {{index+1}} </label>
                               </div>
+                            </div>
+                            <!--添加数组中的项-->
+                            <div class="group array">
+                              <input type="text" :value="addNew" required>
+                              <div class = "removebutton" @click = "">
+                                <svg class="icon" id="add">
+                                  <use :xlink:href="`#icon-add1`"></use>
+                                </svg>
+                              </div>
+                              <span class="highlight"></span>
+                              <span class="bar"></span>
+                              <label>Add New</label>
                             </div>
                           </div>
                           <div v-else>
@@ -45,7 +66,7 @@
                         </div>
                       <button @click = "removeResumeSubfield(item.field,i)">remove</button>
                     </div>
-                    <button>add</button>
+                    <button @click = "addResumeSubfield(item.field)">add</button>
                 </div>
 
                 <div v-else class="resumeField" v-for="(value,key) in resume[item.field]">
@@ -65,6 +86,11 @@
 import getAVUser from '../getAVUser'
 export default {
   name: 'ResumeEditor',
+  date () {
+    return {
+      addNew:''
+    }
+  },
   methods: {
     changeResumeField (path, value, arr) {
       this.$store.commit('updateResume', {path, value, arr:arr})
@@ -73,15 +99,15 @@ export default {
     test (value) {
       console.log(value)
     },
-    addResumeSubfield (item) {
-      this.$store.commit('addResumeSubfield', item)
+    addResumeSubfield (field) {
+      this.$store.commit('addResumeSubfield', field)
       if (getAVUser().id) {
         this.$store.dispatch('saveResume')
       }
-      console.dir(this.$store.state.resume[item['field']])
+//      console.dir(this.$store.state.resume[item['field']])
     },
-    removeResumeSubfield (field, index) {
-      this.$store.commit('removeResumeSubfield', {field, index})
+    removeResumeSubfield (field, index,keys) {
+      this.$store.commit('removeResumeSubfield', {field, index,keys})
       if (getAVUser().id) {
         this.$store.dispatch('saveResume')
       }
@@ -140,8 +166,13 @@ export default {
       }
     }
     > .panels{
+      .fieldName {
+        width:90%;
+        margin: 20px 4% 20px 6% ;
+
+      }
       background: #fff;
-      min-width:300px;
+      min-width:270px;
       width: 450px;
       margin-left:110px;
       margin-right: 20px;
@@ -183,7 +214,87 @@ export default {
         /*border:none;*/
 
       /*}*/
-      .group 			  {
+      h4,h5{
+        width:90%;
+        margin:0 auto;
+      }
+      .group {
+        margin-top:45px;
+        position:relative;
+        margin-bottom:45px;
+        margin-left:auto;
+        margin-right:auto;
+        min-width: 250px;
+
+        input {
+          font-size:16px;
+          padding:10px 10px 10px 5px;
+          display:block;
+          border:none;
+          border-bottom:1px solid #757575;
+          margin:0 auto;
+          width:90%;
+          height: 35px;
+        }
+        input:focus 		{ outline:none; }
+
+        /* LABEL ======================================= */
+        label {
+          margin-left:5%;
+          color:#999;
+          font-size:16px;
+          font-weight:normal;
+          position:absolute;
+          pointer-events:none;
+          left:5px;
+          top:6px;
+          transition:0.2s ease all;
+          -moz-transition:0.2s ease all;
+          -webkit-transition:0.2s ease all;
+        }
+        .removebutton {
+          position: absolute;
+          right:5%;
+          top:20%;
+          cursor: pointer;
+        }
+        #delete {
+          color:#efa7a7;
+        }
+        #add {
+          color:#95dec7;
+          width:28px;
+          height:28px;
+        }
+
+        /* active state */
+        input:focus ~ label, input:valid ~ label 		{
+          top:-20px;
+          font-size:14px;
+          color:#5264AE;
+        }
+
+        /* BOTTOM BARS ================================= */
+        .bar 	{ position:relative; display:block; width:90%; margin:0 auto;}
+        .bar:before, .bar:after 	{
+          content:'';
+          height:2px;
+          width:0;
+          bottom:1px;
+          position:absolute;
+          background:#5264AE;
+          transition:0.2s ease all;
+          -moz-transition:0.2s ease all;
+          -webkit-transition:0.2s ease all;
+        }
+        .bar:before {
+          left:50%;
+        }
+        .bar:after {
+          right:50%;
+        }
+      }
+      .array {
         margin-top:45px;
         position:relative;
         margin-bottom:45px;
@@ -191,61 +302,62 @@ export default {
         margin-right:auto;
 
         min-width: 250px;
+        input {
+          font-size:16px;
+          padding:10px 10px 10px 5px;
+          display:block;
+          border:none;
+          border-bottom:1px solid #757575;
+          margin:0 15% 0 5%;
+          width:80%;
+          height: 35px;
+        }
+        input:focus 		{ outline:none; }
+
+        /* LABEL ======================================= */
+        label {
+          margin-left:5%;
+          color:#999;
+          font-size:16px;
+          font-weight:normal;
+          position:absolute;
+          pointer-events:none;
+          left:5px;
+          top:6px;
+          transition:0.2s ease all;
+          -moz-transition:0.2s ease all;
+          -webkit-transition:0.2s ease all;
+        }
+
+        /* active state */
+        input:focus ~ label, input:valid ~ label 		{
+          top:-20px;
+          font-size:14px;
+          color:#5264AE;
+        }
+
+        /* BOTTOM BARS ================================= */
+        .bar 	{ position:relative; display:block; width:80%; margin-left:5%}
+        .bar:before, .bar:after 	{
+          content:'';
+          height:2px;
+          width:0;
+          bottom:1px;
+          position:absolute;
+          background:#5264AE;
+          transition:0.2s ease all;
+          -moz-transition:0.2s ease all;
+          -webkit-transition:0.2s ease all;
+        }
+        .bar:before {
+          left:50%;
+        }
+        .bar:after {
+          right:50%;
+        }
       }
       /* 父组件相对定位 */
-      input 				{
-        font-size:16px;
-        padding:10px 10px 10px 5px;
-        display:block;
-        border:none;
-        border-bottom:1px solid #757575;
-        margin:0 auto;
-        width:90%;
-        height: 35px;
-      }
-      input:focus 		{ outline:none; }
 
-      /* LABEL ======================================= */
-      label 				 {
-        margin-left:5%;
-        color:#999;
-        font-size:16px;
-        font-weight:normal;
-        position:absolute;
-        pointer-events:none;
-        left:5px;
-        top:6px;
-        transition:0.2s ease all;
-        -moz-transition:0.2s ease all;
-        -webkit-transition:0.2s ease all;
-      }
-
-      /* active state */
-      input:focus ~ label, input:valid ~ label 		{
-        top:-20px;
-        font-size:14px;
-        color:#5264AE;
-      }
-
-      /* BOTTOM BARS ================================= */
-      .bar 	{ position:relative; display:block; width:90%; margin:0 auto;}
-      .bar:before, .bar:after 	{
-        content:'';
-        height:2px;
-        width:0;
-        bottom:1px;
-        position:absolute;
-        background:#5264AE;
-        transition:0.2s ease all;
-        -moz-transition:0.2s ease all;
-        -webkit-transition:0.2s ease all;
-      }
-      .bar:before {
-        left:50%;
-      }
-      .bar:after {
-        right:50%;
-      }
 
       /* active state */
       input:focus ~ .bar:before, input:focus ~ .bar:after {

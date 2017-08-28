@@ -2,7 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="beb7e8d8-5b83-457e-b670-481c5d71c720" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resumer-dev3/static/svg_icons/add1.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resumer-dev3/static/svg_icons/delete.svg" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resumer-dev3/src/assets/icons.js" afterPath="$PROJECT_DIR$/resumer-dev3/src/assets/icons.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resumer-dev3/src/components/ResumeEditor.vue" afterPath="$PROJECT_DIR$/resumer-dev3/src/components/ResumeEditor.vue" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resumer-dev3/src/components/ResumePreview.vue" afterPath="$PROJECT_DIR$/resumer-dev3/src/components/ResumePreview.vue" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resumer-dev3/src/store/index.js" afterPath="$PROJECT_DIR$/resumer-dev3/src/store/index.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resumer-dev3/static/svg_icons/add.svg" afterPath="$PROJECT_DIR$/resumer-dev3/static/svg_icons/add.svg" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -20,11 +27,21 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file leaf-file-name="ResumePreview.vue" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/resumer-dev3/src/components/ResumePreview.vue">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1743">
+              <caret line="266" column="31" lean-forward="false" selection-start-line="266" selection-start-column="31" selection-end-line="266" selection-end-column="31" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file leaf-file-name="ResumeEditor.vue" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/resumer-dev3/src/components/ResumeEditor.vue">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="442">
-              <caret line="82" column="41" lean-forward="false" selection-start-line="82" selection-start-column="41" selection-end-line="82" selection-end-column="41" />
+            <state relative-caret-position="260">
+              <caret line="111" column="42" lean-forward="true" selection-start-line="111" selection-start-column="42" selection-end-line="111" selection-end-column="42" />
               <folding>
                 <element signature="n#nav#0;n#div#0;n#template#0;n#!!top" expanded="false" />
               </folding>
@@ -32,33 +49,51 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ResumePreview.vue" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/resumer-dev3/src/components/ResumePreview.vue">
+      <file leaf-file-name="add1.svg" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/resumer-dev3/static/svg_icons/add1.svg">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="652">
-              <caret line="733" column="2" lean-forward="false" selection-start-line="733" selection-start-column="2" selection-end-line="733" selection-end-column="2" />
+            <state relative-caret-position="0">
+              <caret line="0" column="78" lean-forward="false" selection-start-line="0" selection-start-column="78" selection-end-line="0" selection-end-column="78" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="index.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/resumer-dev3/src/router/index.js">
+      <file leaf-file-name="add.svg" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/resumer-dev3/static/svg_icons/add.svg">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="255">
-              <caret line="15" column="0" lean-forward="false" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
-              <folding>
-                <element signature="e#0#21#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="0">
+              <caret line="0" column="94" lean-forward="false" selection-start-line="0" selection-start-column="94" selection-end-line="0" selection-end-column="94" />
+              <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/resumer-dev2/dist/index.html">
+      <file leaf-file-name="delete.svg" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/resumer-dev3/static/svg_icons/delete.svg">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="0">
-              <caret line="0" column="70" lean-forward="false" selection-start-line="0" selection-start-column="70" selection-end-line="0" selection-end-column="70" />
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="index.js" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/resumer-dev3/src/store/index.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="243">
+              <caret line="216" column="8" lean-forward="true" selection-start-line="216" selection-start-column="8" selection-end-line="216" selection-end-column="8" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Topbar.vue" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/resumer-dev3/src/components/Topbar.vue">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="771">
+              <caret line="102" column="35" lean-forward="false" selection-start-line="102" selection-start-column="35" selection-end-line="102" selection-end-column="35" />
               <folding />
             </state>
           </provider>
@@ -75,36 +110,36 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>font-si</find>
-      <find>padding:10</find>
-      <find>label</find>
-      <find>padding</find>
-      <find>.pan</find>
-      <find>preview</find>
-      <find>group</find>
-      <find>panel</find>
-      <find>resumeEditor</find>
-      <find>panels</find>
-      <find>position</find>
-      <find>margin-right</find>
-      <find>resumepr</find>
-      <find>width</find>
-      <find>header</find>
-      <find>expor</find>
+      <find>addre</find>
+      <find>console</find>
+      <find>content</find>
       <find>button</find>
-      <find>comeback</find>
-      <find>返回</find>
-      <find>margin-left</find>
-      <find>.comeba</find>
-      <find>margin-top</find>
+      <find>array</find>
+      <find>h3</find>
+      <find>.field</find>
+      <find>h4</find>
       <find>input</find>
-      <find>de</find>
-      <find>remove</find>
-      <find>add</find>
+      <find>highlight</find>
+      <find>.remove</find>
+      <find>removeb</find>
+      <find>removebutton</find>
+      <find>svg</find>
+      <find>id</find>
+      <find>delte</find>
+      <find>group</find>
       <find>addresum</find>
-      <find>re</find>
-      <find>init</find>
-      <find>getAV</find>
+      <find>add</find>
+      <find>#add</find>
+      <find>&quot;add</find>
+      <find>#ADD</find>
+      <find>path</find>
+      <find>new</find>
+      <find>NEW</find>
+      <find>addnew</find>
+      <find>delete</find>
+      <find>removeRE</find>
+      <find>removeR</find>
+      <find>remove</find>
     </findStrings>
     <replaceStrings>
       <replace>projects</replace>
@@ -133,18 +168,18 @@
         <option value="$PROJECT_DIR$/resumer-dev3/src/assets/resume.json" />
         <option value="$PROJECT_DIR$/resumer-dev3/build/webpack.base.conf.js" />
         <option value="$PROJECT_DIR$/resumer-dev3/src/resumer-template/kwan.html" />
-        <option value="$PROJECT_DIR$/resumer-dev3/src/components/Topbar.vue" />
         <option value="$PROJECT_DIR$/resumer-dev3/src/resumer-template/upload.html" />
         <option value="$PROJECT_DIR$/resumer-dev2/src/assets/resume.json" />
         <option value="$PROJECT_DIR$/resumer-dev3/src/resumer-template/class.html" />
-        <option value="$PROJECT_DIR$/resumer-dev3/src/components/ResumePreview.vue" />
         <option value="$PROJECT_DIR$/resumer-dev2/config/index.js" />
         <option value="$PROJECT_DIR$/resumer-dev3/config/index.js" />
         <option value="$PROJECT_DIR$/resumer-dev3/src/App.vue" />
         <option value="$PROJECT_DIR$/resumer-dev3/src/components/Preview.vue" />
-        <option value="$PROJECT_DIR$/resumer-dev3/src/store/index.js" />
-        <option value="$PROJECT_DIR$/resumer-dev3/src/components/ResumeEditor.vue" />
         <option value="$PROJECT_DIR$/resumer-dev2/src/App.vue" />
+        <option value="$PROJECT_DIR$/resumer-dev3/src/components/ResumePreview.vue" />
+        <option value="$PROJECT_DIR$/resumer-dev3/src/components/Topbar.vue" />
+        <option value="$PROJECT_DIR$/resumer-dev3/src/components/ResumeEditor.vue" />
+        <option value="$PROJECT_DIR$/resumer-dev3/src/store/index.js" />
       </list>
     </option>
   </component>
@@ -174,8 +209,8 @@
     <handled-path value="$PROJECT_DIR$/vuex-practice1/node_modules" />
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="330" />
-    <option name="y" value="3" />
+    <option name="x" value="-8" />
+    <option name="y" value="-8" />
     <option name="width" value="1430" />
     <option name="height" value="1040" />
   </component>
@@ -217,7 +252,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
@@ -229,17 +263,6 @@
             <path>
               <item name="Vue" type="b2602c69:ProjectViewProjectNode" />
               <item name="Vue" type="462c0819:PsiDirectoryNode" />
-              <item name="resumer-dev2" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Vue" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Vue" type="462c0819:PsiDirectoryNode" />
-              <item name="resumer-dev2" type="462c0819:PsiDirectoryNode" />
-              <item name="dist" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Vue" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Vue" type="462c0819:PsiDirectoryNode" />
               <item name="resumer-dev3" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -252,27 +275,20 @@
               <item name="Vue" type="b2602c69:ProjectViewProjectNode" />
               <item name="Vue" type="462c0819:PsiDirectoryNode" />
               <item name="resumer-dev3" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="components" type="462c0819:PsiDirectoryNode" />
+              <item name="static" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="Vue" type="b2602c69:ProjectViewProjectNode" />
               <item name="Vue" type="462c0819:PsiDirectoryNode" />
               <item name="resumer-dev3" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="router" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Vue" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Vue" type="462c0819:PsiDirectoryNode" />
-              <item name="resumer-dev3" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="store" type="462c0819:PsiDirectoryNode" />
+              <item name="static" type="462c0819:PsiDirectoryNode" />
+              <item name="svg_icons" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -294,11 +310,11 @@
     <property name="SearchEverywhereHistoryKey" value="webpack.&#9;FILE&#9;file://C:/Users/Administrator/Desktop/jirengu/senior/Vue/resumer-dev3/build/webpack.base.conf.js" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Users\Administrator\Desktop\jirengu\senior\Vue" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\Administrator\Desktop\jirengu\senior\Vue\resumer-dev3\static\svg_icons" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Administrator\Desktop\jirengu\senior\Vue" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -337,12 +353,14 @@
       <workItem from="1503559559894" duration="7104000" />
       <workItem from="1503580843296" duration="33388000" />
       <workItem from="1503716424965" duration="12080000" />
-      <workItem from="1503843506033" duration="2611000" />
+      <workItem from="1503843506033" duration="3634000" />
+      <workItem from="1503898329334" duration="1026000" />
+      <workItem from="1503899436842" duration="10969000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="98589000" />
+    <option name="totallyTimeSpent" value="111607000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -355,16 +373,18 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.15964173" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32934782" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Debug Logs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.2228261" sideWeight="0.5021075" order="12" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32934782" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Execute Anonymous" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.22608696" sideWeight="0.49789253" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.22934783" sideWeight="0.49789253" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.16332982" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32934782" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Salesforce" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
@@ -373,9 +393,29 @@
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32934782" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
+    <layout-to-restore>
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32934782" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug Logs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.2228261" sideWeight="0.5021075" order="12" side_tool="true" content_ui="tabs" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32934782" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Execute Anonymous" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.22934783" sideWeight="0.49789253" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3286334" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32934782" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Salesforce" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
+    </layout-to-restore>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
@@ -414,21 +454,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/resumer-dev2/src/components/MyDialog.vue">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="476">
-          <caret line="28" column="4" lean-forward="false" selection-start-line="28" selection-start-column="4" selection-end-line="32" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/test.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="10" selection-end-column="15" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/resumer-dev2/src/components/SignUpForm.vue">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="3349">
@@ -455,7 +480,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="204">
           <caret line="15" column="0" lean-forward="false" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -471,7 +495,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="187">
           <caret line="11" column="0" lean-forward="false" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -506,13 +529,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/resumer-dev3/static/svg_icons/add.svg">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/resumer-dev3/static/svg_icons/home.svg">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="153">
@@ -538,7 +554,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="68">
           <caret line="4" column="26" lean-forward="true" selection-start-line="4" selection-start-column="26" selection-end-line="4" selection-end-column="26" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -560,7 +575,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="187">
           <caret line="11" column="24" lean-forward="true" selection-start-line="11" selection-start-column="24" selection-end-line="11" selection-end-column="24" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -630,7 +644,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -654,7 +667,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="187">
           <caret line="20" column="12" lean-forward="false" selection-start-line="20" selection-start-column="12" selection-end-line="20" selection-end-column="12" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -662,7 +674,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="130" lean-forward="false" selection-start-line="0" selection-start-column="130" selection-end-line="0" selection-end-column="130" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -696,14 +707,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/resumer-dev3/src/components/Topbar.vue">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-154">
-          <caret line="88" column="9" lean-forward="true" selection-start-line="88" selection-start-column="9" selection-end-line="88" selection-end-column="9" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/resumer-dev3/src/getAVUser.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -717,7 +720,7 @@
         <state relative-caret-position="0">
           <caret line="79" column="17" lean-forward="false" selection-start-line="79" selection-start-column="17" selection-end-line="79" selection-end-column="17" />
           <folding>
-            <element signature="e#294#321#0" expanded="true" />
+            <element signature="e#294#321#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -742,9 +745,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="221">
           <caret line="15" column="0" lean-forward="true" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
-          <folding>
-            <element signature="n#!!doc" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -764,51 +764,28 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/resumer-dev3/src/store/index.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="71">
-          <caret line="190" column="43" lean-forward="false" selection-start-line="190" selection-start-column="43" selection-end-line="190" selection-end-column="43" />
-          <folding>
-            <element signature="e#0#23#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/resumer-dev2/src/App.vue">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="431">
           <caret line="36" column="8" lean-forward="false" selection-start-line="36" selection-start-column="8" selection-end-line="36" selection-end-column="8" />
           <folding>
-            <element signature="e#267#294#0" expanded="true" />
+            <element signature="e#267#294#0" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/resumer-dev2/src/store/index.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="15" column="19" lean-forward="false" selection-start-line="15" selection-start-column="19" selection-end-line="16" selection-end-column="84" />
-          <folding>
-            <element signature="e#0#23#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resumer-dev3/src/components/ResumeEditor.vue">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="442">
-          <caret line="82" column="41" lean-forward="false" selection-start-line="82" selection-start-column="41" selection-end-line="82" selection-end-column="41" />
-          <folding>
-            <element signature="n#nav#0;n#div#0;n#template#0;n#!!top" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resumer-dev3/src/components/ResumePreview.vue">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="652">
-          <caret line="733" column="2" lean-forward="false" selection-start-line="733" selection-start-column="2" selection-end-line="733" selection-end-column="2" />
+        <state relative-caret-position="289">
+          <caret line="21" column="71" lean-forward="false" selection-start-line="21" selection-start-column="71" selection-end-line="21" selection-end-column="71" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resumer-dev2/dist/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="74" lean-forward="true" selection-start-line="0" selection-start-column="74" selection-end-line="0" selection-end-column="74" />
         </state>
       </provider>
     </entry>
@@ -816,16 +793,63 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="255">
           <caret line="15" column="0" lean-forward="false" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resumer-dev3/src/components/Topbar.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="771">
+          <caret line="102" column="35" lean-forward="false" selection-start-line="102" selection-start-column="35" selection-end-line="102" selection-end-column="35" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resumer-dev3/src/components/ResumePreview.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1743">
+          <caret line="266" column="31" lean-forward="false" selection-start-line="266" selection-start-column="31" selection-end-line="266" selection-end-column="31" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resumer-dev3/static/svg_icons/delete.svg">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resumer-dev3/static/svg_icons/add.svg">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="94" lean-forward="false" selection-start-line="0" selection-start-column="94" selection-end-line="0" selection-end-column="94" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resumer-dev3/static/svg_icons/add1.svg">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="78" lean-forward="false" selection-start-line="0" selection-start-column="78" selection-end-line="0" selection-end-column="78" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resumer-dev3/src/components/ResumeEditor.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="260">
+          <caret line="111" column="42" lean-forward="true" selection-start-line="111" selection-start-column="42" selection-end-line="111" selection-end-column="42" />
           <folding>
-            <element signature="e#0#21#0" expanded="true" />
+            <element signature="n#nav#0;n#div#0;n#template#0;n#!!top" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/resumer-dev2/dist/index.html">
+    <entry file="file://$PROJECT_DIR$/resumer-dev3/src/store/index.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="70" lean-forward="false" selection-start-line="0" selection-start-column="70" selection-end-line="0" selection-end-column="70" />
+        <state relative-caret-position="243">
+          <caret line="216" column="8" lean-forward="true" selection-start-line="216" selection-start-column="8" selection-end-line="216" selection-end-column="8" />
           <folding />
         </state>
       </provider>
