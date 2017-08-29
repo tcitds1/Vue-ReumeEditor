@@ -14,7 +14,7 @@ export default new Vuex.Store({
     },
     resumeConfig: [
         {field: 'profile', icon: 'id', type:"object", keys: ['name', 'profession', 'About']},
-        { field: 'contacts', icon: 'phone', type: 'object', keys: ['email', 'phome', 'github', 'address' ] },
+        { field: 'contacts', icon: 'phone', type: 'object', keys: ['email', 'phone', 'github', 'address' ] },
         { field: 'workHistory', icon: 'work', type: 'array', keys: ['company', 'position', 'website', 'startDate', 'endDate', 'summary',['Principal Activity'] ] },
         { field: 'education', icon: 'book', type: 'array', keys: ['school','area','studyType','startDate','endDate','gpa', ['courses']] },
         { field: 'projects', icon: 'heart', type: 'array', keys: ['name', 'platform','startDate','endDate','website','summary'] },
