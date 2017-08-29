@@ -54,7 +54,7 @@ export default {
       this.signInDialogVisible = false
       this.$store.commit('setUser', user)
       console.log('signIn成功')
-      this.$store.dispatch('fetchResume')
+      this.$store.dispatch('Resume')
     },
     signOut () {
       console.log('登出')

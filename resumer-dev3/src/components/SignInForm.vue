@@ -35,7 +35,7 @@
           <input type="password" v-model="formData.password" class="input_form_sign d_block  active_inp" placeholder="PASSWORD" name="pass_us" />
           <!--<input type="password" class="input_form_sign" placeholder="CONFIRM PASSWORD" name="conf_pass_us" />-->
 
-          <a href="#" class="link_forgot_pass d_block" >{{errorMessage}}</a>
+          <!--<a href="#" class="link_forgot_pass d_block" >{{errorMessage}}</a>-->
         </div>
         <div class="cont_btn">
           <!--<button class="btn_sign">SIGN IN</button>-->
@@ -178,15 +178,14 @@ export default {
     border-bottom: 1px solid #FF8383 ;}
 
   .link_forgot_pass {
-    /*float:left;*/
-    /*position: relative;*/
-    /*margin-top: 0px;*/
-    /*margin-left: 35%;*/
+    float:left;
+    position: relative;
+    margin-top: 0px;
     text-decoration: none;
     color: #999;
     font-size: 13px;
-    display: none;
     transition: all 0.5s;
+    margin-left:35%;
   }
   .cont_btn {
     position: relative;

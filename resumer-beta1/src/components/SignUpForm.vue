@@ -1,20 +1,5 @@
 <template>
-  <!--<div>-->
-    <!--<form @submit.prevent="signUp">-->
-      <!--<div class="row">-->
-        <!--<label>用户名</label>-->
-        <!--<input type="text" v-model="formData.username" required>-->
-      <!--</div>-->
-      <!--<div class="row">-->
-        <!--<label >密码</label>-->
-        <!--<input type="password" v-model="formData.password" required>-->
-      <!--</div>-->
-      <!--<div class="actions">-->
-        <!--<input type="submit" value="提交">-->
-        <!--<span class = "errorMessage">{{errorMessage}}</span>-->
-      <!--</div>-->
-    <!--</form>-->
-  <!--</div>-->
+
   <div class="cont_centrar">
     <div class="cont_login">
       <form v-on:submit.prevent = "signUp">
@@ -23,12 +8,10 @@
             <li class="active"><a href="#">SIGN UP</a>
               <span class="linea_bajo_nom"></span>
             </li>
-            <!--<li><a href="#up" onclick="sign_up()">SIGN UP</a><span class="linea_bajo_nom"></span>-->
-            <!--</li>-->
+
           </ul>
         </div>
         <div class="cont_text_inputs">
-          <!--<input type="text" class="input_form_sign " placeholder="NAME" name="name_us" />-->
 
           <input type="text" v-model="formData.username" class="input_form_sign d_block active_inp" placeholder="USERNAME" name="emauil_us" />
 
@@ -187,7 +170,7 @@ export default {
     /*float:left;*/
     /*position: relative;*/
     /*margin-top: 0px;*/
-    /*margin-left: 35%;*/
+    margin-left: 35%;
     text-decoration: none;
     color: #999;
     font-size: 13px;

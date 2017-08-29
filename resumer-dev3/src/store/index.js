@@ -9,6 +9,7 @@ export default new Vuex.Store({
     // count: 0,
     preview: false,
     selected: 'profile',
+    bugWrapper:false,
     user: {
       id: '',
       username: ''
@@ -40,13 +41,13 @@ export default new Vuex.Store({
         //   }
         // ]
       },
-      "location": {
-        "address": "2712 Broadway St",
-        "postalCode": "CA 94115",
-        "city": "San Francisco",
-        "countryCode": "US",
-        "region": "California"
-      },
+      // "location": {
+      //   "address": "2712 Broadway St",
+      //   "postalCode": "CA 94115",
+      //   "city": "San Francisco",
+      //   "countryCode": "US",
+      //   "region": "California"
+      // },
       "contacts": {
         "email": "konyahoshi@gmail.com",
         "phone": "13131313113",
@@ -124,22 +125,22 @@ export default new Vuex.Store({
           ]
         }
       ],
-      "languages": [
-        {
-          "language": "English",
-          "fluency": "Native speaker"
-        }
-      ],
-
-      "interests": [
-        {
-          "name": "Wildlife",
-          "keywords": [
-            "Ferrets",
-            "Unicorns"
-          ]
-        }
-      ],
+      // "languages": [
+      //   {
+      //     "language": "English",
+      //     "fluency": "Native speaker"
+      //   }
+      // ],
+      //
+      // "interests": [
+      //   {
+      //     "name": "Wildlife",
+      //     "keywords": [
+      //       "Ferrets",
+      //       "Unicorns"
+      //     ]
+      //   }
+      // ],
 
       "references": [
         {
@@ -159,7 +160,6 @@ export default new Vuex.Store({
       console.log('switchPreview成功' + state.preview)
     },
     initState (state, payload) {
-      Object.assign(state, payload)
       state.resumeConfig.map((item) => {
         // mention
         if (item.type === 'array') {
@@ -173,12 +173,14 @@ export default new Vuex.Store({
       })
       if (payload) {
         Object.assign(state, payload)
+        // console.log('initstate payload);
       }
       console.log('initstate成功 从localstorage中获取state')
     },
     switchTab (state, payload) {
       state.selected = payload
-      localStorage.setItem('state', JSON.stringify(state))
+      // localStorage.setItem('state', JSON.stringify(state))
+      关闭
     },
     updateResume (state, {path, value, arr}) {
       // state.resume[field][key] = value
@@ -197,7 +199,8 @@ export default new Vuex.Store({
       console.dir(state.user)
     },
     removeUser (state) {
-      state.user.id = ''
+      state.user = {id:'',username:''};
+      console.log("removeUSER成功")
     },
     addResumeSubfield (state, {field,keys}) {
       if(keys){

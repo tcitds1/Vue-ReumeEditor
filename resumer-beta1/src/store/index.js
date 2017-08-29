@@ -7,6 +7,7 @@ Vue.use(Vuex)
 export default new Vuex.Store({
   state: {
     // count: 0,
+    bugWrapper:false,
     preview: false,
     selected: 'profile',
     user: {
@@ -150,6 +151,13 @@ export default new Vuex.Store({
     }
   },
   mutations: {
+    switchWrapper (state) {
+      if(!state.bugWrapper) {
+        state.bugWrapper = true;
+      }else {
+        state.bugWrapper = false;
+      }
+    },
     switchPreview (state) {
       if (!state.preview) {
         state.preview = true
@@ -178,7 +186,7 @@ export default new Vuex.Store({
     },
     switchTab (state, payload) {
       state.selected = payload
-      localStorage.setItem('state', JSON.stringify(state))
+      // localStorage.setItem('state', JSON.stringify(state))
     },
     updateResume (state, {path, value, arr}) {
       // state.resume[field][key] = value

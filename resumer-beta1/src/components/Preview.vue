@@ -170,7 +170,11 @@
         </div>
       </section>
 
-      <a class = "button comeback"href="#" v-on:click.prevent="switchPreview">X</a>
+
+      <a href="#" :class="[{button:true},{print:true}, {show:show}]" @click.prevent="print">打印</a>
+
+      <a class = "button comeback " href="#" v-on:click.prevent="switchPreview">返回</a>
+
     </div>
   </div>
   <!--<div id="resumePreview">-->
@@ -240,6 +244,11 @@
 <script>
   export default {
     name: 'resumePreview',
+    data () {
+      return {
+        show: true
+      }
+    },
     computed: {
       resume () {
         return this.$store.state.resume
@@ -248,11 +257,17 @@
     methods: {
       switchPreview () {
         this.$store.commit('switchPreview')
+      },
+      print () {
+        setTimeout(function () {
+          window.print();
+        },500)
       }
     }
   }
 </script>
 <style scoped>
+
   .comeback {
     position:fixed;
     top:25px;
@@ -260,11 +275,33 @@
     text-decoration: none;
     font-size: 20px;
     display: none;
+    color:red !important;
+    transition: all .3s;
   }
-  #resumePreview:hover .comeback {
+  body:hover .comeback {
     display: block;
   }
-  /* latin-ext */
+  .print:hover +.comeback{
+    opacity: 0;
+  }
+  .print:hover {
+    opacity: 0;
+  }
+  .print {
+    position:fixed;
+    top:100px;
+    right:10%;
+    text-decoration: none;
+    font-size: 20px;
+    opacity: 1;
+    transition: all 1s;
+  }
+  .show {
+    /*display: block;*/
+    opacity: 1;
+  }
+
+
   @font-face {
     font-family: 'Lato';
     font-style: normal;
@@ -607,7 +644,7 @@
     background: #68B6E3;
     padding: 50px;
     margin-bottom: 30px;
-    width:900px;
+    width:100%;
     margin-right: auto;
     margin-left:auto;
   }
@@ -630,12 +667,12 @@
     background: #ffffff;
     overflow: auto;
     /*margin-top:15px;*/
-    margin-left:12px;
-    margin-right: 20px;
+    /*margin-left:12px;*/
+    /*margin-right: 20px;*/
   }
   .container {
     font-size: 0.9em;
-    max-width: 900px;
+    max-width: 800px;
     margin: 0 auto;
     margin-top:15px;
     padding:10px 15px;

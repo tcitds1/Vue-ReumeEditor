@@ -1,30 +1,34 @@
 <template>
+  <!--简历编辑模块-->
     <div id="resumeEditor">
-        <!--i am resumeEditor-->
+        <!--aside侧边栏-->
         <nav>
             <ol>
                 <li title="主页">
-                  <!--<svg class="icon" >-->
-                    <!--<use :xlink:href="`#icon-black`"></use>-->
-                  <!--</svg>-->
                   Resume
                 </li>
+                <!--遍历配置数据ResumeConfig,设置将不同的list对应不同svg图片-->
+                <!--当点击的时候为该list添加class，使样式突出-->
                 <li v-for="(item,index) in resumeConfig"
                      :class="{active: item.field === selected}"
                      @click="selected = item.field;" :title ="item.field" >
-
                     <svg class="icon" :id="item.field">
                         <use :xlink:href="`#icon-${item.icon}`"></use>
                     </svg>
                 </li>
             </ol>
         </nav>
+        <!--编辑框-->
         <ol class = "panels">
+            <!--遍历简历数据，展示侧边栏中选中的项-->
             <li v-for="item in resumeConfig" v-show="item.field === selected">
+                <!--list名称-->
                 <h3 class="fieldName">{{item.field}}</h3>
+                <!--数据分开渲染，array和object-->
                 <div v-if = "item.type === 'array'" class="arrayCt">
                     <div v-for="(subitem, i) in resume[item.field]" class = "arrayResume">
-                        <div class="resumeField"v-for="(value,key) in subitem">
+                      <div class="resumeField"v-for="(value,key) in subitem">
+                          <!--再次细分渲染，array和string-->
                           <div v-if="Array.isArray(value)">
                             <h4 class = "keywords">{{key}}</h4>
                             <!--数组中的项-->
@@ -55,7 +59,9 @@
                               <label>Add New</label>
                             </div>
                           </div>
+                          <!--再次渲染-->
                           <div v-else>
+                            <!--添加输入框动态样式group-->
                             <div class="group">
                               <input type="text" :value="value" @input="changeResumeField(`${item.field}.${i}.${key}`, $event.target.value)" required>
                               <span class="highlight"></span>
@@ -64,12 +70,13 @@
                             </div>
                           </div>
                         </div>
-                      <!--<div class = "Rborder"></div>-->
+                      <!--删除数据-->
                       <button @click = "removeResumeSubfield(item.field,i)" class="btRemove bigButton">remove</button>
                     </div>
+                    <!--添加数据-->
                     <button @click = "addResumeSubfield(item.field)" class="btAdd bigButton">add</button>
                 </div>
-
+                <!--数据分开渲染-->
                 <div v-else class="resumeField" v-for="(value,key) in resume[item.field]">
                     <div class="group">
                       <input type="text" :value="value" @input="changeResumeField(`${item.field}.${key}`, $event.target.value)" required>
@@ -90,16 +97,20 @@ export default {
   data () {
     return {
       addnew:''
+      //新建数据
     }
   },
   methods: {
+    //根据输入框输入，同步更改state中的数据，提交参数commit
     changeResumeField (path, value, arr) {
       this.$store.commit('updateResume', {path, value, arr:arr})
-//      console.dir(arr) 我真是个天才
+    //      console.dir(arr) 我真是个天才
     },
+    //测试
     test (value) {
       console.log(value)
     },
+    //按钮添加事件,添加新的数组项到store
     addResumeSubfield (field,keys) {
       this.addnew = '';
       this.$store.commit('addResumeSubfield', {field,keys})
@@ -108,6 +119,7 @@ export default {
       }
 //      console.dir(this.$store.state.resume[item['field']])
     },
+    //按钮删除事件,删除state中对应的项
     removeResumeSubfield (field, index,keys) {
       this.$store.commit('removeResumeSubfield', {field, index,keys})
       if (getAVUser().id) {
@@ -115,6 +127,7 @@ export default {
       }
     }
   },
+  //计算属性，返回store中的数据
   computed: {
     // count () {
     //   return this.$store.state.count
@@ -135,7 +148,7 @@ export default {
     },
     profile () {
       this.$store.state.profile
-    }
+    },
   }
 }
 </script>

@@ -1,22 +1,7 @@
 <template>
-  <!--<div>-->
-    <!--<form @submit.prevent="signIn">-->
-      <!--<div class="row">-->
-        <!--<label>用户名</label>-->
-        <!--<input type="text" required v-model="formData.username">-->
-      <!--</div>-->
-      <!--<div class="row">-->
-        <!--<label>密码</label>-->
-        <!--<input type="password" required v-model="formData.password">-->
-      <!--</div>-->
-      <!--<div class="actions">-->
-        <!--<input type="submit" value="提交">-->
-        <!--<span>{{errorMessage}}</span>-->
-      <!--</div>-->
-    <!--</form>-->
-  <!--</div>-->
   <div class="cont_centrar">
     <div class="cont_login">
+      <!--将表单提交处理事件函数为signIn-->
       <form v-on:submit.prevent = "signIn">
         <div class="cont_tabs_login">
           <ul class='ul_tabs'>
@@ -28,17 +13,14 @@
           </ul>
         </div>
         <div class="cont_text_inputs">
-          <!--<input type="text" class="input_form_sign " placeholder="NAME" name="name_us" />-->
-
+          <!--用户名-->
           <input type="text" v-model="formData.username" class="input_form_sign d_block active_inp" placeholder="USERNAME" name="emauil_us" />
-
+          <!--密码-->
           <input type="password" v-model="formData.password" class="input_form_sign d_block  active_inp" placeholder="PASSWORD" name="pass_us" />
-          <!--<input type="password" class="input_form_sign" placeholder="CONFIRM PASSWORD" name="conf_pass_us" />-->
-
           <a href="#" class="link_forgot_pass d_block" >{{errorMessage}}</a>
         </div>
         <div class="cont_btn">
-          <!--<button class="btn_sign">SIGN IN</button>-->
+          <!--提交-->
           <input type="submit" class="btn_sign" value="SIGN IN">
         </div>
       </form>
@@ -65,10 +47,11 @@ export default {
     signIn () {
       let {username, password} = this.formData
       AV.User.logIn(username, password).then((loginedUser) => {
-        // this.$store.commit('setUser', getAVUser())
         this.$emit('success', getAVUser())
+        //登录成功，将返回的用户参数传递给父组件，调用success所对应的父组件方法
       }, (error) => {
         this.errorMessage = getErrorMessage(error)
+        //登录失败,将返回的参数传递给错误处理函数，将数据渲染到界面上
       })
     }
   }
@@ -181,7 +164,7 @@ export default {
     /*float:left;*/
     /*position: relative;*/
     /*margin-top: 0px;*/
-    /*margin-left: 35%;*/
+    margin-left: 35%;
     text-decoration: none;
     color: #999;
     font-size: 13px;

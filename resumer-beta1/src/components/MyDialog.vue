@@ -1,11 +1,8 @@
 <template>
+  <!-- //用户登录注册容器-->
   <div class="dialogWrapper" v-show="visible">
       <div class="wrapper" @click="close"></div>
       <div class="dialog">
-          <!--<header>-->
-              <!--{{title}}-->
-              <!--<span class="close" @click="close">X</span>-->
-          <!--</header>-->
           <main>
               <slot></slot>
           </main>
@@ -16,6 +13,7 @@
 <script>
 export default {
   name: 'MyDialog',
+  //父子间通信数据
   props: ['title', 'visible'],
   methods: {
     close () {
