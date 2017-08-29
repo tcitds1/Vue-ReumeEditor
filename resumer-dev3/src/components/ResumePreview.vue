@@ -8,7 +8,7 @@
 
       <section id="basics">
         <div class="contact">
-          <h3>Contact</h3>
+          <h2>Contact</h2>
           <div class="website">
             <strong>Github</strong><a :href="resume.contacts.github">{{resume.contacts.github}}</a></div>
           <div class="email">
@@ -22,7 +22,8 @@
             <strong>Address</strong>{{resume.contacts.address}}</div>
         </div>
         <div class="summary">
-          <h3 class = "about">About</h3>
+          <!--<h3 class = "about">About</h3>-->
+          <strong>About</strong>
           <p>{{resume.profile.About}}</p>
         </div>
         <!--<section id="profiles">-->
@@ -109,7 +110,7 @@
         <h2>Awards</h2>
         <section v-for="item in resume.awards">
           <div class="item">
-            <div class="institution">{{item.title}}</div>
+            <div class="institution"><strong>{{item.title}}</strong></div>
             <div class="study_date">
               <span class="startDate">{{item.date}}</span>
             </div>
@@ -164,8 +165,8 @@
       <section id="references">
         <h2>References</h2>
         <div class="item">
-          <blockquote class="reference">It is my pleasure to recommend Richard, his performance working as a consultant for Main St. Company proved that he will be a valuable addition to any company.</blockquote>
-          <div class="name">— Erlich Bachman</div>
+          <blockquote class="reference">请多多关照让世界变得更加热闹的John Smith</blockquote>
+          <div class="name">— Jhon Smith</div>
         </div>
       </section>
     </div>

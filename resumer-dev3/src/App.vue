@@ -41,20 +41,20 @@ export default {
     document.body.insertAdjacentHTML('afterbegin', icons)
 
 //    this.$store.commit('initState')
-//    let user = getAVUser()
-//    this.$store.commit('setUser', user)
-//    if (user.id) {
-//      this.$store.dispatch('fetchResume')
-//    } else {
-//      let state = localStorage.getItem('state')
-//      if (state) {
-//        this.$store.commit('initState', JSON.parse(state))
-//      }
-//    }
-//    window.onbeforeunload = () => {
-//      let state = JSON.stringify(this.$store.state)
+    let user = getAVUser()
+    this.$store.commit('setUser', user)
+    if (user.id) {
+      this.$store.dispatch('fetchResume')
+    } else {
+      let state = localStorage.getItem('state')
+      if (state) {
+        this.$store.commit('initState', JSON.parse(state))
+      }
+    }
+    window.onbeforeunload = () => {
+      let state = JSON.stringify(this.$store.state)
 //      window.localStorage.setItem('state', state)
-//    }
+    }
   }
 }
 </script>

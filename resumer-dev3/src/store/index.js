@@ -63,8 +63,8 @@ export default new Vuex.Store({
           "summary" : "今天又是和平的一天",
           "highlights": [
             "制作机器人",
-            "Successfully won Techcrunch Disrupt",
-            "Optimized an algorithm that holds the current world record for Weisman Scores"
+            "给版本喂饭",
+            "准备上学"
           ]
         }
       ],
@@ -77,18 +77,19 @@ export default new Vuex.Store({
           "endDate": "2014-01-01",
           "gpa": "4.0",
           "courses": [
-            "DB1101 - Basic SQL",
-            "CS2011 - Java Introduction"
+            "必修-MySQL",
+            "必修-Java",
+            "选修-网络完全"
           ]
         }
       ],
 
       "awards": [
         {
-          "title": "Digital Compression Pioneer Award",
+          "title": "银河系第一奖项",
           "date": "2014-11-01",
-          "address": "Techcrunch",
-          "summary": "There is no spoon."
+          "address": "火星",
+          "summary": "在研究怎么利用二次元发电上做出巨大贡献"
         }
       ],
       //volunteer
@@ -105,17 +106,17 @@ export default new Vuex.Store({
 
       "skills": [
         {
-          "name": "Compression",
-          "level": "Master",
+          "name": "Java Development",
+          "level": "Junior",
           "keywords": [
-            "Mpeg",
-            "MP4",
-            "GIF"
+            "Eclipse",
+            "Android",
+            "Jsp"
           ]
         },
         {
           "name": "Web Development",
-          "level": "Master",
+          "level": "Junior",
           "keywords": [
             "HTML",
             "CSS",
@@ -158,7 +159,7 @@ export default new Vuex.Store({
       console.log('switchPreview成功' + state.preview)
     },
     initState (state, payload) {
-      // Object.assign(state, payload)
+      Object.assign(state, payload)
       state.resumeConfig.map((item) => {
         // mention
         if (item.type === 'array') {

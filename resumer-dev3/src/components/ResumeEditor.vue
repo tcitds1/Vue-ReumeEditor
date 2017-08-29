@@ -44,7 +44,7 @@
                             </div>
                             <!--添加数组中的项-->
                             <div class="group array">
-                              <input type="text" :value="addnew" required>
+                              <input type="text" v-model="addnew" required>
                               <div class = "countbutton" @click = "addResumeSubfield(item.field,[item.field,i,key,addnew])">
                                 <svg class="icon" id="add">
                                   <use :xlink:href="`#icon-add1`"></use>
@@ -101,6 +101,7 @@ export default {
       console.log(value)
     },
     addResumeSubfield (field,keys) {
+      this.addnew = '';
       this.$store.commit('addResumeSubfield', {field,keys})
       if (getAVUser().id) {
         this.$store.dispatch('saveResume')
