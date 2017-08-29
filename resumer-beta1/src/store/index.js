@@ -6,8 +6,6 @@ import AV from './leancloud'
 Vue.use(Vuex)
 export default new Vuex.Store({
   state: {
-    // count: 0,
-    bugWrapper:false,
     preview: false,
     selected: 'profile',
     user: {
@@ -17,7 +15,7 @@ export default new Vuex.Store({
     resumeConfig: [
         {field: 'profile', icon: 'id', type:"object", keys: ['name', 'profession', 'About']},
         { field: 'contacts', icon: 'phone', type: 'object', keys: ['email', 'phome', 'github', 'address' ] },
-        { field: 'workHistory', icon: 'work', type: 'array', keys: ['company', 'position', 'website', 'startDate', 'endDate', 'summary',['hightlights'] ] },
+        { field: 'workHistory', icon: 'work', type: 'array', keys: ['company', 'position', 'website', 'startDate', 'endDate', 'summary',['Principal Activity'] ] },
         { field: 'education', icon: 'book', type: 'array', keys: ['school','area','studyType','startDate','endDate','gpa', ['courses']] },
         { field: 'projects', icon: 'heart', type: 'array', keys: ['name', 'platform','startDate','endDate','website','summary'] },
         { field: 'skills', icon:'skills', type: 'array',keys: ['name','level', ['keywords']]},
@@ -27,26 +25,7 @@ export default new Vuex.Store({
       "profile": {
         "name": "易文祥",
         "profession": "SoftwareEngineer",
-        "About": "我就是喜欢前端啊",
-        // "Internet": [
-        //   {
-        //     "network": "Twitter",
-        //     "username": "neutralthoughts",
-        //     "url": ""
-        //   },
-        //   {
-        //     "network": "SoundCloud",
-        //     "username": "dandymusicnl",
-        //     "url": "https://soundcloud.com/dandymusicnl"
-        //   }
-        // ]
-      },
-      "location": {
-        "address": "2712 Broadway St",
-        "postalCode": "CA 94115",
-        "city": "San Francisco",
-        "countryCode": "US",
-        "region": "California"
+        "About": "个人非常喜欢前端开发，热爱接触和学习新鲜事物，对一切充满好奇，喜欢探讨各种各样跟web有关的的奇技淫巧",
       },
       "contacts": {
         "email": "konyahoshi@gmail.com",
@@ -61,17 +40,17 @@ export default new Vuex.Store({
           "website": "http://dongyun.com",
           "startDate": "2013-12-01",
           "endDate": "2014-12-01",
-          "summary" : "今天又是和平的一天",
-          "highlights": [
+          "summary" : "东云研究所是一所专业的高级的智能机器人研究机构，志在于使机器人更加智能化，造价更低，外观更美，更实用。",
+          "Principal Activity": [
             "制作机器人",
-            "给版本喂饭",
-            "准备上学"
+            "给机器人编写识别程序",
+            "在校内推广机器人"
           ]
         }
       ],
       "education": [
         {
-          "school": "皇家林业科技大学",
+          "school": "林业科技大学",
           "area": "湖南省长沙市",
           "studyType": "本科",
           "startDate": "2011-06-01",
@@ -87,24 +66,22 @@ export default new Vuex.Store({
 
       "awards": [
         {
-          "title": "银河系第一奖项",
+          "title": "校奖学金N等奖",
           "date": "2014-11-01",
-          "address": "火星",
-          "summary": "在研究怎么利用二次元发电上做出巨大贡献"
+          "address": "林业科技大学",
+          "summary": "在研究寝室温度与学习的三位曲线上做了比较大的贡献，提出了没有空调学不动，上课总是在五楼太坑爹，不吹风扇写不出代码等重要理论。"
         }
       ],
-      //volunteer
       "projects": [
         {
-          "name": "机器人自动化设计",
-          "platform": "Android",
+          "name": "基于Jsp的个人博客网站",
+          "platform": "Web",
           "startDate": "2014-08-01",
           "endDate": "2014-10-01",
-          "website": "http://robert.com",
-          "summary": "Innovative middle-out compression algorithm that changes the way we store data."
+          "website": "http://jspblog.com",
+          "summary": "JSP+MySql+Tomcat开发的个人博客网站，实现了注册登录，增删改除博客，并对博客进行分类的功能.用户可以对博客进行评论，并且在留言板留言，博主可以对这些评论进行回复"
         }
       ],
-
       "skills": [
         {
           "name": "Java Development",
@@ -124,40 +101,10 @@ export default new Vuex.Store({
             "Javascript"
           ]
         }
-      ],
-      "languages": [
-        {
-          "language": "English",
-          "fluency": "Native speaker"
-        }
-      ],
-
-      "interests": [
-        {
-          "name": "Wildlife",
-          "keywords": [
-            "Ferrets",
-            "Unicorns"
-          ]
-        }
-      ],
-
-      "references": [
-        {
-          "name": "Erlich Bachman",
-          "reference": "It is my pleasure to recommend Richard, his performance working as a consultant for Main St. Company proved that he will be a valuable addition to any company."
-        }
       ]
     }
   },
   mutations: {
-    switchWrapper (state) {
-      if(!state.bugWrapper) {
-        state.bugWrapper = true;
-      }else {
-        state.bugWrapper = false;
-      }
-    },
     switchPreview (state) {
       if (!state.preview) {
         state.preview = true

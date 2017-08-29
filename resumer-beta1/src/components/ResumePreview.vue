@@ -52,7 +52,7 @@
               <p>{{item.summary}}</p>
             </div>
             <ul class="highlights">
-              <li v-for="(value,index) in item.highlights">{{value}}</li>
+              <li v-for="(value,index) in item['Principal Activity']">{{value}}</li>
             </ul>
           </div>
         </section>
@@ -539,7 +539,7 @@ export default {
   }
   .container {
     font-size: 0.9em;
-    max-width: 900px;
+    max-width: 850px;
     margin: 0 auto;
     margin-top:15px;
     padding:10px 15px;
