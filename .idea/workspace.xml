@@ -2,7 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="beb7e8d8-5b83-457e-b670-481c5d71c720" name="Default" comment="">
+      <change type="DELETED" beforePath="$PROJECT_DIR$/resumer-beta1/dist/static/css/app.31d121ccb27ba85777aa12c2f4b4a700.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/resumer-beta1/dist/static/css/app.31d121ccb27ba85777aa12c2f4b4a700.css.map" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/resumer-beta1/dist/static/js/app.000f77636ecac0f85e7a.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/resumer-beta1/dist/static/js/app.000f77636ecac0f85e7a.js.map" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/resumer-beta1/dist/static/js/manifest.07765088bc0c9e822ec4.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/resumer-beta1/dist/static/js/manifest.07765088bc0c9e822ec4.js.map" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resumer-beta1/dist/index.html" afterPath="$PROJECT_DIR$/resumer-beta1/dist/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resumer-beta1/src/components/ResumeEditor.vue" afterPath="$PROJECT_DIR$/resumer-beta1/src/components/ResumeEditor.vue" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resumer-beta1/src/components/Topbar.vue" afterPath="$PROJECT_DIR$/resumer-beta1/src/components/Topbar.vue" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
@@ -24,8 +32,8 @@
       <file leaf-file-name="ResumeEditor.vue" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/resumer-beta1/src/components/ResumeEditor.vue">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="748">
-              <caret line="81" column="22" lean-forward="false" selection-start-line="81" selection-start-column="22" selection-end-line="81" selection-end-column="137" />
+            <state relative-caret-position="131">
+              <caret line="183" column="25" lean-forward="false" selection-start-line="183" selection-start-column="25" selection-end-line="183" selection-end-column="25" />
               <folding>
                 <element signature="n#div#0;n#div#0;n#div#0;n#div#0;n#li#0;n#ol#0;n#div#0;n#template#0;n#!!top" expanded="false" />
                 <element signature="n#div#1;n#div#0;n#div#0;n#div#0;n#li#0;n#ol#0;n#div#0;n#template#0;n#!!top" expanded="false" />
@@ -49,12 +57,9 @@
       <file leaf-file-name="Topbar.vue" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/resumer-beta1/src/components/Topbar.vue">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="136">
-              <caret line="8" column="17" lean-forward="true" selection-start-line="8" selection-start-column="17" selection-end-line="8" selection-end-column="17" />
-              <folding>
-                <element signature="n#div#0;n#div#0;n#template#0;n#!!top" expanded="false" />
-                <marker date="1504102705587" expanded="true" signature="2984:4445" ph="..." />
-              </folding>
+            <state relative-caret-position="233">
+              <caret line="92" column="25" lean-forward="false" selection-start-line="92" selection-start-column="25" selection-end-line="92" selection-end-column="25" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -62,9 +67,21 @@
       <file leaf-file-name="MyDialog.vue" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/resumer-beta1/src/components/MyDialog.vue">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="612">
-              <caret line="36" column="12" lean-forward="false" selection-start-line="36" selection-start-column="12" selection-end-line="36" selection-end-column="12" />
+            <state relative-caret-position="272">
+              <caret line="16" column="30" lean-forward="false" selection-start-line="16" selection-start-column="30" selection-end-line="16" selection-end-column="30" />
               <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="App.vue" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/resumer-beta1/src/App.vue">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1054">
+              <caret line="124" column="1" lean-forward="false" selection-start-line="124" selection-start-column="1" selection-end-line="124" selection-end-column="1" />
+              <folding>
+                <element signature="e#334#361#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -127,8 +144,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>link_forgot</find>
-      <find>setitem</find>
       <find>link_fo</find>
       <find>postion</find>
       <find>.bug</find>
@@ -157,6 +172,8 @@
       <find>keywords</find>
       <find>workhisto</find>
       <find>style</find>
+      <find>topbar</find>
+      <find>panel</find>
     </findStrings>
     <replaceStrings>
       <replace>projects</replace>
@@ -201,17 +218,17 @@
         <option value="$PROJECT_DIR$/resumer-dev3/src/components/SignUpForm.vue" />
         <option value="$PROJECT_DIR$/resumer-dev3/src/App.vue" />
         <option value="$PROJECT_DIR$/resumer-beta1/src/getAVUser.js" />
-        <option value="$PROJECT_DIR$/resumer-beta1/src/App.vue" />
         <option value="$PROJECT_DIR$/resumer-beta1/src/getErrorMessage.js" />
         <option value="$PROJECT_DIR$/resumer-beta1/src/store/leancloud.js" />
         <option value="$PROJECT_DIR$/resumer-beta1/src/components/MyDialog.vue" />
         <option value="$PROJECT_DIR$/resumer-beta1/src/components/SignInForm.vue" />
         <option value="$PROJECT_DIR$/resumer-beta1/src/components/SignUpForm.vue" />
-        <option value="$PROJECT_DIR$/resumer-beta1/src/components/ResumeEditor.vue" />
         <option value="$PROJECT_DIR$/README.MD" />
         <option value="$PROJECT_DIR$/resumer-beta1/src/components/ResumePreview.vue" />
         <option value="$PROJECT_DIR$/resumer-beta1/src/components/Preview.vue" />
         <option value="$PROJECT_DIR$/resumer-beta1/src/store/index.js" />
+        <option value="$PROJECT_DIR$/resumer-beta1/src/App.vue" />
+        <option value="$PROJECT_DIR$/resumer-beta1/src/components/ResumeEditor.vue" />
         <option value="$PROJECT_DIR$/resumer-beta1/src/components/Topbar.vue" />
       </list>
     </option>
@@ -393,12 +410,12 @@
       <workItem from="1503899436842" duration="29487000" />
       <workItem from="1503971306957" duration="31199000" />
       <workItem from="1504035813958" duration="2389000" />
-      <workItem from="1504094766666" duration="1962000" />
+      <workItem from="1504094766666" duration="3744000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="165675000" />
+    <option name="totallyTimeSpent" value="167457000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -411,7 +428,6 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.26238146" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32934782" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -421,7 +437,7 @@
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Execute Anonymous" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.20652173" sideWeight="0.49789253" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.20652173" sideWeight="0.49789253" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Salesforce" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
@@ -717,14 +733,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/resumer-beta1/src/App.vue">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1330">
-          <caret line="7" column="15" lean-forward="true" selection-start-line="7" selection-start-column="15" selection-end-line="7" selection-end-column="15" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/resumer-beta1/src/getAVUser.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="170">
@@ -849,25 +857,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/resumer-beta1/src/components/MyDialog.vue">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="612">
-          <caret line="36" column="12" lean-forward="false" selection-start-line="36" selection-start-column="12" selection-end-line="36" selection-end-column="12" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resumer-beta1/src/components/ResumeEditor.vue">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="748">
-          <caret line="81" column="22" lean-forward="false" selection-start-line="81" selection-start-column="22" selection-end-line="81" selection-end-column="137" />
-          <folding>
-            <element signature="n#div#0;n#div#0;n#div#0;n#div#0;n#li#0;n#ol#0;n#div#0;n#template#0;n#!!top" expanded="false" />
-            <element signature="n#div#1;n#div#0;n#div#0;n#div#0;n#li#0;n#ol#0;n#div#0;n#template#0;n#!!top" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/resumer-beta1/src/components/ResumePreview.vue">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="425">
@@ -893,14 +882,40 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/resumer-beta1/src/components/MyDialog.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="16" column="30" lean-forward="false" selection-start-line="16" selection-start-column="30" selection-end-line="16" selection-end-column="30" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resumer-beta1/src/App.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1054">
+          <caret line="124" column="1" lean-forward="false" selection-start-line="124" selection-start-column="1" selection-end-line="124" selection-end-column="1" />
+          <folding>
+            <element signature="e#334#361#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resumer-beta1/src/components/ResumeEditor.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="131">
+          <caret line="183" column="25" lean-forward="false" selection-start-line="183" selection-start-column="25" selection-end-line="183" selection-end-column="25" />
+          <folding>
+            <element signature="n#div#0;n#div#0;n#div#0;n#div#0;n#li#0;n#ol#0;n#div#0;n#template#0;n#!!top" expanded="false" />
+            <element signature="n#div#1;n#div#0;n#div#0;n#div#0;n#li#0;n#ol#0;n#div#0;n#template#0;n#!!top" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/resumer-beta1/src/components/Topbar.vue">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="8" column="17" lean-forward="true" selection-start-line="8" selection-start-column="17" selection-end-line="8" selection-end-column="17" />
-          <folding>
-            <element signature="n#div#0;n#div#0;n#template#0;n#!!top" expanded="false" />
-            <marker date="1504102705587" expanded="true" signature="2984:4445" ph="..." />
-          </folding>
+        <state relative-caret-position="233">
+          <caret line="92" column="25" lean-forward="false" selection-start-line="92" selection-start-column="25" selection-end-line="92" selection-end-column="25" />
+          <folding />
         </state>
       </provider>
     </entry>

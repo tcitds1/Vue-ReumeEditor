@@ -18,6 +18,7 @@
                 <!--通过点击预览按钮切换到预览模块-->
                 <a href="#" class="button" @click.prevent="switchPreview">预览</a>
                 <!--通过prop父子间通信，传递visible的值来决定是否显示注册登录框-->
+
                 <MyDialog title = "登录" :visible = "signInDialogVisible" @close = "signInDialogVisible = false">
                     <SignInForm @success="signIn"></SignInForm>
                 </MyDialog>
@@ -89,6 +90,8 @@ export default {
         background:#ffffff;
         box-shadow:0 1px 3px 0 rgba(0,0,0,0.25);
         >.wrapper {
+            z-index: 1000;
+            position: relative;
             min-width: 1024px;
             max-width: 1440px;
             margin: 0 auto ;

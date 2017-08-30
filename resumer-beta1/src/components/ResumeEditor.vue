@@ -181,6 +181,7 @@ export default {
       }
     }
     > .panels{
+      position: relative;
       .arrayResume + .arrayResume {
         margin-top:120px;
       }
