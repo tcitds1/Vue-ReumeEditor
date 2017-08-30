@@ -10,7 +10,8 @@
     "build": "node build/build.js",
     "unit": "cross-env BABEL_ENV=test karma start test/unit/karma.conf.js --single-run",
     "test": "npm run unit",
-    "lint": "eslint --ext .js,.vue src test/unit/specs"
+    "lint": "eslint --ext .js,.vue src test/unit/specs",
+    "svg": "node build/svg-symbols.js"
   },
   "dependencies": {
     "leancloud-storage": "^3.0.4",

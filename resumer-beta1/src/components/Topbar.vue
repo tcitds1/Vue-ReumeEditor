@@ -2,7 +2,11 @@
     <div id="Topbar">
         <!--顶部栏-->
         <div class="wrapper">
-            <span class="logo"></span>
+            <div class="logo">
+              <a href="#" class="abutton" @click="clearResume">Clear</a>
+              <a href="#" class="abutton" @click="fillResume">Fill</a>
+              <a href="#"></a>
+            </div>
 
             <div class="actions">
                 <div v-if="logined" class="userActions">
@@ -26,6 +30,13 @@
                 <MyDialog title = "注册" :visible = "signUpDialogVisible" @close = "signUpDialogVisible = false">
                     <SignUpForm @success="signIn"/>
                 </MyDialog>
+                <a href="https://github.com/tcitds1/Vue" class = "github">
+                  <svg class="icon" id="github">
+                    <use :xlink:href="`#icon-github`"></use>
+                  </svg>
+                </a>
+
+
             </div>
         </div>
     </div>
@@ -61,6 +72,12 @@ export default {
     }
   },
   methods: {
+    clearResume () {
+      this.$store.commit('initState');
+    },
+    fillResume () {
+      this.$store.commit('fillResume');
+    },
     signIn (user) {
       this.signUpDialogVisible = false
       this.signInDialogVisible = false
@@ -93,17 +110,31 @@ export default {
             z-index: 1000;
             position: relative;
             min-width: 1024px;
-            max-width: 1440px;
+            max-width: 1840px;
             margin: 0 auto ;
             height: 60px;
             display: flex;
             justify-content: space-between;
             align-items: center;
-            padding: 0 16px;
+            padding: 0 10px;
+            margin-left: 80px;
         }
         .logo {
-            font-size: 24px;
+            font-size: 19px;
             color: #000000;
+            margin-left: 20px;
+            .abutton {
+              text-decoration: none;
+              /*list-style: none;*/
+              margin:0 15px;
+              color:#ccc;
+              opacity: .8;
+            }
+            .abutton:hover {
+              /*color:*/
+              color:black;
+              opacity: .5;
+            }
         }
         .button {
             border-radius:3px;
@@ -111,7 +142,7 @@ export default {
             height: 32px;
             border: none;
             font-size: 18px;
-            background: #ddd;
+            background: #ccd7de;
             color: #222;
             cursor: pointer;
             text-decoration: none;
@@ -123,11 +154,12 @@ export default {
                 box-shadow: 1px 1px 1px hsla(0, 0, 0, 0.50);
             }
             &.primary {
-                background: #02af5f;
+                background: #4e95c3;
                 color: white;
             }
         }
         .actions {
+            margin-right: 20px;
             display: flex;
             .userActions {
               margin-right: 5px;
@@ -143,6 +175,14 @@ export default {
             display: flex;
 
         }*/
+      svg.icon{
+        width: 28px; // 原设计稿 32px 不好看，改成 24px
+        height: 28px;
+      }
+      .github {
+        color:black;
+        margin-left: 20px;
+      }
     }
 
 </style>

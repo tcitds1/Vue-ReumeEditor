@@ -67,8 +67,11 @@ export default {
     }
     //窗口关闭之前执行的方法，将数据存储到localstorage
     window.onbeforeunload = () => {
-      let state = JSON.stringify(this.$store.state)
-//      window.localStorage.setItem('state', state)
+      let user = getAVUser();
+      if(!user.id){
+        let state = JSON.stringify(this.$store.state)
+        window.localStorage.setItem('state', state)
+      }
     }
   }
 }

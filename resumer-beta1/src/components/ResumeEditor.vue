@@ -4,7 +4,7 @@
         <!--aside侧边栏-->
         <nav>
             <ol>
-                <li title="主页">
+                <li title="主页" id="logo">
                   Resume
                 </li>
                 <!--遍历配置数据ResumeConfig,设置将不同的list对应不同svg图片-->
@@ -158,6 +158,11 @@ export default {
     display: flex;
     flex-direction: row;
     overflow: auto;
+    #logo {
+      height: 64px;
+      margin-top:0;
+      margin-bottom:0;
+    }
     > nav{
       width: 80px;
       background: black;

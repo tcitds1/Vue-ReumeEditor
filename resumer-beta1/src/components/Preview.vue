@@ -171,9 +171,17 @@
       </section>
 
 
-      <a href="#" :class="[{button:true},{print:true}, {show:show}]" @click.prevent="print">打印</a>
+      <a href="#" class="button print show" @click.prevent="print">
+        <svg class="icon" id="svgprint">
+          <use :xlink:href="`#icon-print`"></use>
+        </svg>
+      </a>
 
-      <a class = "button comeback " href="#" v-on:click.prevent="switchPreview">返回</a>
+      <a class = "button comeback " href="#" v-on:click.prevent="switchPreview">
+        <svg class="icon" id="svgout">
+          <use :xlink:href="`#icon-out`"></use>
+        </svg>
+      </a>
 
     </div>
   </div>
@@ -267,7 +275,9 @@
   }
 </script>
 <style scoped>
-
+  .button {
+    display: block;
+  }
   .comeback {
     position:fixed;
     top:25px;
@@ -793,6 +803,14 @@
   #references,
   #interests {
     clear: both;
+  }
+  svg.icon{
+    width: 20px;
+    height: 20px;
+    color:blue;
+  }
+  #svgout {
+    color:red;
   }
   /* End styling */
 </style>
