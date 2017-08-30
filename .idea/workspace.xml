@@ -2,31 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="beb7e8d8-5b83-457e-b670-481c5d71c720" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/resumer-beta1/dist/static/css/app.80a5b269932707c7f22fb083a35bb173.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/resumer-beta1/dist/static/css/app.80a5b269932707c7f22fb083a35bb173.css.map" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/resumer-beta1/dist/static/js/app.741d0ef9cb42fcd573f0.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/resumer-beta1/dist/static/js/app.741d0ef9cb42fcd573f0.js.map" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/resumer-beta1/dist/static/js/manifest.b27716ab2f5a9410ca01.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/resumer-beta1/dist/static/js/manifest.b27716ab2f5a9410ca01.js.map" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/resumer-beta1/dist/static/js/vendor.986369aa12e34a4a2188.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/resumer-beta1/dist/static/js/vendor.986369aa12e34a4a2188.js.map" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/resumer-beta1/dist/static/svg_icons/add.svg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/resumer-beta1/dist/static/svg_icons/add1.svg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/resumer-beta1/dist/static/svg_icons/black.svg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/resumer-beta1/dist/static/svg_icons/book.svg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/resumer-beta1/dist/static/svg_icons/cup.svg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/resumer-beta1/dist/static/svg_icons/delete.svg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/resumer-beta1/dist/static/svg_icons/github.svg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/resumer-beta1/dist/static/svg_icons/heart.svg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/resumer-beta1/dist/static/svg_icons/home.svg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/resumer-beta1/dist/static/svg_icons/id.svg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/resumer-beta1/dist/static/svg_icons/out.svg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/resumer-beta1/dist/static/svg_icons/phone.svg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/resumer-beta1/dist/static/svg_icons/print.svg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/resumer-beta1/dist/static/svg_icons/skills.svg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/resumer-beta1/dist/static/svg_icons/star.svg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/resumer-beta1/dist/static/svg_icons/work.svg" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resumer-beta1/src/components/ResumePreview.vue" afterPath="$PROJECT_DIR$/resumer-beta1/src/components/ResumePreview.vue" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -57,7 +34,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Topbar.vue" pinned="false" current-in-tab="true">
+      <file leaf-file-name="Topbar.vue" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/resumer-beta1/src/components/Topbar.vue">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="352">
@@ -119,11 +96,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ResumePreview.vue" pinned="false" current-in-tab="false">
+      <file leaf-file-name="ResumePreview.vue" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/resumer-beta1/src/components/ResumePreview.vue">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-243">
-              <caret line="377" column="5" lean-forward="false" selection-start-line="377" selection-start-column="2" selection-end-line="377" selection-end-column="5" />
+            <state relative-caret-position="247">
+              <caret line="182" column="138" lean-forward="false" selection-start-line="182" selection-start-column="134" selection-end-line="182" selection-end-column="138" />
               <folding>
                 <element signature="n#section#0;n#div#0;n#div#0;n#template#0;n#!!top" expanded="false" />
                 <element signature="n#section#2;n#div#0;n#div#0;n#template#0;n#!!top" expanded="false" />
@@ -153,7 +130,7 @@
         <entry file="file://$PROJECT_DIR$/resumer-beta1/src/components/Preview.vue">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="216">
-              <caret line="318" column="121" lean-forward="false" selection-start-line="318" selection-start-column="119" selection-end-line="318" selection-end-column="121" />
+              <caret line="318" column="124" lean-forward="true" selection-start-line="318" selection-start-column="59" selection-end-line="318" selection-end-column="124" />
               <folding />
             </state>
           </provider>
@@ -197,9 +174,9 @@
       <find>initstate</find>
       <find>icon</find>
       <find>comeback</find>
+      <find>wo</find>
       <find>svg</find>
       <find>woff</find>
-      <find>wo</find>
     </findStrings>
     <replaceStrings>
       <replace>projects</replace>
@@ -250,13 +227,13 @@
         <option value="$PROJECT_DIR$/resumer-beta1/src/components/SignInForm.vue" />
         <option value="$PROJECT_DIR$/resumer-beta1/src/components/SignUpForm.vue" />
         <option value="$PROJECT_DIR$/README.MD" />
-        <option value="$PROJECT_DIR$/resumer-beta1/src/components/ResumePreview.vue" />
         <option value="$PROJECT_DIR$/resumer-beta1/src/components/ResumeEditor.vue" />
         <option value="$PROJECT_DIR$/resumer-beta1/package.json" />
         <option value="$PROJECT_DIR$/resumer-beta1/src/components/Topbar.vue" />
         <option value="$PROJECT_DIR$/resumer-beta1/src/App.vue" />
         <option value="$PROJECT_DIR$/resumer-beta1/src/store/index.js" />
         <option value="$PROJECT_DIR$/resumer-beta1/src/components/Preview.vue" />
+        <option value="$PROJECT_DIR$/resumer-beta1/src/components/ResumePreview.vue" />
       </list>
     </option>
   </component>
@@ -444,12 +421,12 @@
       <workItem from="1503899436842" duration="29487000" />
       <workItem from="1503971306957" duration="31199000" />
       <workItem from="1504035813958" duration="2389000" />
-      <workItem from="1504094766666" duration="11040000" />
+      <workItem from="1504094766666" duration="11204000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="174753000" />
+    <option name="totallyTimeSpent" value="174917000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -462,6 +439,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.26238146" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32934782" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -471,7 +449,7 @@
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Execute Anonymous" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.20652173" sideWeight="0.49789253" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.20652173" sideWeight="0.49789253" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Salesforce" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
@@ -905,21 +883,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/resumer-beta1/src/components/ResumePreview.vue">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-243">
-          <caret line="377" column="5" lean-forward="false" selection-start-line="377" selection-start-column="2" selection-end-line="377" selection-end-column="5" />
-          <folding>
-            <element signature="n#section#0;n#div#0;n#div#0;n#template#0;n#!!top" expanded="false" />
-            <element signature="n#section#2;n#div#0;n#div#0;n#template#0;n#!!top" expanded="false" />
-            <element signature="n#section#3;n#div#0;n#div#0;n#template#0;n#!!top" expanded="false" />
-            <element signature="n#section#4;n#div#0;n#div#0;n#template#0;n#!!top" expanded="false" />
-            <element signature="n#section#5;n#div#0;n#div#0;n#template#0;n#!!top" expanded="false" />
-            <element signature="n#section#6;n#div#0;n#div#0;n#template#0;n#!!top" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/resumer-beta1/src/store/index.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="216">
@@ -928,6 +891,22 @@
             <element signature="e#0#23#0" expanded="true" />
             <element signature="e#264#2345#0" expanded="false" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resumer-beta1/src/components/Topbar.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="352">
+          <caret line="65" column="35" lean-forward="false" selection-start-line="65" selection-start-column="35" selection-end-line="65" selection-end-column="35" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resumer-beta1/src/components/Preview.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="216">
+          <caret line="318" column="124" lean-forward="true" selection-start-line="318" selection-start-column="59" selection-end-line="318" selection-end-column="124" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -942,19 +921,18 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/resumer-beta1/src/components/Preview.vue">
+    <entry file="file://$PROJECT_DIR$/resumer-beta1/src/components/ResumePreview.vue">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="216">
-          <caret line="318" column="121" lean-forward="false" selection-start-line="318" selection-start-column="119" selection-end-line="318" selection-end-column="121" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resumer-beta1/src/components/Topbar.vue">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="352">
-          <caret line="65" column="35" lean-forward="false" selection-start-line="65" selection-start-column="35" selection-end-line="65" selection-end-column="35" />
-          <folding />
+        <state relative-caret-position="247">
+          <caret line="182" column="138" lean-forward="false" selection-start-line="182" selection-start-column="134" selection-end-line="182" selection-end-column="138" />
+          <folding>
+            <element signature="n#section#0;n#div#0;n#div#0;n#template#0;n#!!top" expanded="false" />
+            <element signature="n#section#2;n#div#0;n#div#0;n#template#0;n#!!top" expanded="false" />
+            <element signature="n#section#3;n#div#0;n#div#0;n#template#0;n#!!top" expanded="false" />
+            <element signature="n#section#4;n#div#0;n#div#0;n#template#0;n#!!top" expanded="false" />
+            <element signature="n#section#5;n#div#0;n#div#0;n#template#0;n#!!top" expanded="false" />
+            <element signature="n#section#6;n#div#0;n#div#0;n#template#0;n#!!top" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
