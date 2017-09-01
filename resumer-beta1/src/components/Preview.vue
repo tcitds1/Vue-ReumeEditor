@@ -284,19 +284,27 @@
     right:10%;
     text-decoration: none;
     font-size: 20px;
-    display: none;
+    /*display: none;*/
     color:red !important;
     transition: all .3s;
   }
-  body:hover .comeback {
-    display: block;
+  @media print {
+    .comeback {
+      display: none;
+    }
+    .print {
+      display: none;
+    }
   }
-  .print:hover +.comeback{
-    opacity: 0;
-  }
-  .print:hover {
-    opacity: 0;
-  }
+  /*body:hover .comeback {*/
+    /*display: block;*/
+  /*}*/
+  /*.print:hover +.comeback{*/
+    /*opacity: 0;*/
+  /*}*/
+  /*.print:hover {*/
+    /*opacity: 0;*/
+  /*}*/
   .print {
     position:fixed;
     top:75px;
