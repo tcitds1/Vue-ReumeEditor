@@ -299,7 +299,7 @@
   }
   .print {
     position:fixed;
-    top:80px;
+    top:75px;
     right:10%;
     text-decoration: none;
     font-size: 20px;
@@ -362,7 +362,8 @@
   html {
     font-size: 100%;
     -webkit-text-size-adjust: 100%;
-    -ms-text-size-adjust: 100%
+    -ms-text-size-adjust: 100%;
+    background:#fff;
   }
 
   html,
@@ -676,7 +677,6 @@
   #resumePreview {
     background: #ffffff;
     overflow: auto;
-    height:100vh;
     /*margin-top:15px;*/
     /*margin-left:12px;*/
     /*margin-right: 20px;*/
