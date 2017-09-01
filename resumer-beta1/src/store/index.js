@@ -8,6 +8,15 @@ export default new Vuex.Store({
   state: {
     preview: false,
     selected: 'profile',
+    fillConfig:[
+      {field: 'profile', icon: 'id', type:"object", keys: ['name', 'profession', 'About']},
+      { field: 'contacts', icon: 'phone', type: 'object', keys: ['email', 'phone', 'github', 'address' ] },
+      { field: 'workHistory', icon: 'work', type: 'array', keys: ['company', 'position', 'website', 'startDate', 'endDate', 'summary',['Principal Activity'] ] },
+      { field: 'education', icon: 'book', type: 'array', keys: ['school','area','studyType','startDate','endDate','gpa', ['courses']] },
+      { field: 'projects', icon: 'heart', type: 'array', keys: ['name', 'platform','startDate','endDate','website','summary'] },
+      { field: 'skills', icon:'skills', type: 'array',keys: ['name','level', ['keywords']]},
+      { field: 'awards', icon: 'cup', type: 'array', keys: ['title','date','address','summary'] },
+    ],
     fillData:{
       "profile": {
         "name": "易文祥",
@@ -189,6 +198,7 @@ export default new Vuex.Store({
   mutations: {
     fillResume (state) {
       Object.assign(state.resume,state.fillData)
+      Object.assign(state.resumeConfig,state.fillConfig)
       // console.log('fillchenggong')
     },
     switchPreview (state) {
