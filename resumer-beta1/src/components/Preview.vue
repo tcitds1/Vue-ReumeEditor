@@ -280,7 +280,7 @@
   }
   .comeback {
     position:fixed;
-    top:25px;
+    top:10px;
     right:10%;
     text-decoration: none;
     font-size: 20px;
@@ -299,7 +299,7 @@
   }
   .print {
     position:fixed;
-    top:100px;
+    top:80px;
     right:10%;
     text-decoration: none;
     font-size: 20px;
@@ -676,6 +676,7 @@
   #resumePreview {
     background: #ffffff;
     overflow: auto;
+    height:100vh;
     /*margin-top:15px;*/
     /*margin-left:12px;*/
     /*margin-right: 20px;*/
