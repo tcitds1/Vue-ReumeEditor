@@ -150,7 +150,7 @@
         <h2>References</h2>
         <div class="item">
           <blockquote class="reference">请多多关照让世界变得更加热闹的John Smith</blockquote>
-          <div class="name">— Jhon Smith</div>
+          <div class="name">— John Smith</div>
         </div>
       </section>
     </div>
