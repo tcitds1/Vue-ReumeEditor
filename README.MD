@@ -1,5 +1,27 @@
-### [在线简历编辑器预览](https://tcitds1.github.io/Vue-resume/resumer-beta1/dist/index.html#/)
+# resumer
 
-#### 1.通过z-index对部分非static定位属性遮盖层进行了优化。
-#### 2.根据vue的响应式原理对数据的渲染进行了处理，使对象->数组->对象中的属性也能编辑和预览同步。
-#### 3.对web端大小分辨率的显示器的屏幕进行了自适应.
+> A Vue.js project
+
+## Build Setup
+
+``` bash
+# install dependencies
+npm install
+
+# serve with hot reload at localhost:8080
+npm run dev
+
+# build for production with minification
+npm run build
+
+# build for production and view the bundle analyzer report
+npm run build --report
+
+# run unit tests
+npm run unit
+
+# run all tests
+npm test
+```
+
+For detailed explanation on how things work, checkout the [guide](http://vuejs-templates.github.io/webpack/) and [docs for vue-loader](http://vuejs.github.io/vue-loader).
