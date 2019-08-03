@@ -25,7 +25,7 @@ export default new Vuex.Store({
     ],
     resume: {
       "profile": {
-        "name": "易文祥",
+        "name": "陈清扬",
         "profession": "SoftwareEngineer",
         "About": "我就是喜欢前端啊",
         // "Internet": [
@@ -52,7 +52,7 @@ export default new Vuex.Store({
         "email": "konyahoshi@gmail.com",
         "phone": "13131313113",
         "github": "https://github.com/tcitds1",
-        "address": "湖南省长沙市"
+        "address": "广东省xxx"
       },
       "workHistory": [
         {
@@ -71,8 +71,8 @@ export default new Vuex.Store({
       ],
       "education": [
         {
-          "school": "皇家林业科技大学",
-          "area": "湖南省长沙市",
+          "school": "东云研究所",
+          "area": "广东省xxx",
           "studyType": "本科",
           "startDate": "2011-06-01",
           "endDate": "2014-01-01",
